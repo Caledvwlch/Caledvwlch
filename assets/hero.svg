@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="360" viewBox="0 0 1000 360" role="img" aria-labelledby="title desc">
+  <title id="title">Caledvwlch — a strawberry-milk daydream</title>
+  <desc id="desc">A pastel pink dessert meadow with original fan-art drawings of Chiikawa, Hachiware and Usagi, floating clouds, strawberries and softly twinkling stars. Caledvwlch: cybersecurity study room.</desc>
+  <defs>
+    <linearGradient id="milk" x2="0" y2="1"><stop stop-color="#fff8fa"/><stop offset="1" stop-color="#fff1f6"/></linearGradient>
+    <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#f8e5ef"/><stop offset=".68" stop-color="#fff1f6"/><stop offset="1" stop-color="#fff4cf"/></linearGradient>
+    <linearGradient id="icing" x2="0" y2="1"><stop stop-color="#fffafd"/><stop offset="1" stop-color="#ffd7e6"/></linearGradient>
+    <pattern id="gingham" width="24" height="24" patternUnits="userSpaceOnUse"><rect width="24" height="24" fill="#fff1f6"/><path d="M0 6H24M6 0V24" stroke="#f6a9c6" stroke-width="12" opacity=".13"/></pattern>
+    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="11" cy="11" r="1" fill="#de9cb6" opacity=".28"/></pattern>
+    <clipPath id="window"><rect x="28" y="28" width="944" height="304" rx="27"/></clipPath>
+    <g id="star"><path d="M0-9Q1-1 8 0Q1 1 0 9Q-1 1-8 0Q-1-1 0-9Z" fill="#fff4cf" stroke="#d7a27e" stroke-width="1.3"/></g>
+    <g id="cloud" fill="#fffdfb" stroke="#f0cbda" stroke-width="1.5"><path d="M-34 12C-49 11-47-9-32-10C-29-28-7-30 1-15C14-26 32-18 32-4C49-6 52 15 35 17H-31Z"/></g>
+    <g id="berry" stroke="#b66d7e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M-13-6C-21 3-9 22 0 25C8 23 23 3 14-6C7-12-6-11-13-6Z" fill="#f6a9c6"/><path d="M-1-7L-12-11L-8-3L0-6L8-2L13-11L2-8L1-15" fill="#bfd8ac" stroke="#95b48b"/><path d="M-8 2L-7 4M5 1L4 3M-1 9V11M10 8L9 10M-5 15L-4 17" stroke="#fff4cf" stroke-width="2"/></g>
+    <g id="flower"><path d="M0 0V13M0 10Q-8 4-8 9Q-5 13 0 12" fill="none" stroke="#b8cda1" stroke-width="2"/><g fill="#fffdf9" stroke="#ecc4d3" stroke-width=".8"><ellipse cy="-4" rx="3" ry="5"/><ellipse cx="4" rx="5" ry="3"/><ellipse cy="4" rx="3" ry="5"/><ellipse cx="-4" rx="5" ry="3"/></g><circle r="2.5" fill="#f4d98c"/></g>
+    <g id="sparkle" fill="#d6a3b5"><circle r="2"/><circle cx="8" cy="-5" r="1"/></g>
+  </defs>
+  <style>
+    .ink{stroke:#866474;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
+    .detail{fill:none;stroke:#866474;stroke-width:2.1;stroke-linecap:round;stroke-linejoin:round}
+    .twinkle{animation:twinkle 4.6s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+    .late{animation-delay:-2.3s}.later{animation-delay:-1.2s}
+    .bob{animation:bob 5.6s ease-in-out infinite}.bob2{animation:bob 6.2s ease-in-out -2s infinite}.bob3{animation:bob 5.2s ease-in-out -3s infinite}
+    .blink{animation:blink 7s linear infinite;transform-box:fill-box;transform-origin:center}
+    .blink2{animation-delay:-2.7s}.blink3{animation-delay:-4.4s}
+    @keyframes twinkle{0%,100%{opacity:.45;transform:scale(.8)}50%{opacity:1;transform:scale(1.12)}}
+    @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+    @keyframes blink{0%,43%,46%,100%{transform:scaleY(1)}44%,45%{transform:scaleY(.12)}}
+    @media(prefers-reduced-motion:reduce){.twinkle,.bob,.bob2,.bob3,.blink{animation:none}}
+  </style>
+  <!-- A stitched gingham frame: all artwork is local, with a complete static first frame. -->
+  <rect x="3" y="3" width="994" height="354" rx="35" fill="url(#gingham)" stroke="#edb6cc" stroke-width="2"/>
+  <rect x="14" y="14" width="972" height="332" rx="29" fill="none" stroke="#d79ab2" stroke-dasharray="3 7" stroke-linecap="round" opacity=".65"/>
+  <rect x="27" y="27" width="946" height="306" rx="28" fill="url(#milk)" stroke="#eac0d2" stroke-width="2"/>
+  <g clip-path="url(#window)">
+    <rect x="28" y="28" width="944" height="304" fill="url(#sky)"/>
+    <rect x="28" y="28" width="944" height="304" fill="url(#dots)"/>
+    <circle cx="817" cy="133" r="97" fill="#fff7df" opacity=".77"/>
+    <circle cx="817" cy="133" r="79" fill="none" stroke="#fffdf6" stroke-width="1.5" stroke-dasharray="2 7"/>
+    <g opacity=".8"><use href="#cloud" transform="translate(578 77) scale(.86)"/><use href="#cloud" transform="translate(906 85) scale(.75)"/><use href="#cloud" transform="translate(464 236) scale(.62)"/></g>
+    <path d="M28 286Q111 260 199 284T382 281T560 286Q677 253 789 275T972 266V333H28Z" fill="#f2edcf"/>
+    <path d="M28 305Q131 280 262 306T486 304Q622 281 752 301T972 293V333H28Z" fill="#fff4cf"/>
+    <path d="M28 320Q172 300 340 320T665 318T972 314V334H28Z" fill="#f7d9dc"/>
+    <!-- Tiny confectionery counter under the lettering. -->
+    <g transform="translate(84 255)">
+      <ellipse cx="47" cy="43" rx="62" ry="7" fill="#deb0be" opacity=".2"/>
+      <ellipse cx="43" cy="38" rx="54" ry="6" fill="#fffafd" stroke="#e6b8cb" stroke-width="1.5"/>
+      <path d="M3 10L65 1L81 33L15 39Z" fill="#edb8a4" stroke="#bd8d87" stroke-width="1.8"/>
+      <path d="M6 19L69 11M10 29L75 23" stroke="#fff4cf" stroke-width="5"/>
+      <path d="M2 9L62-3L77 7L14 21Z" fill="url(#icing)" stroke="#c794a6" stroke-width="1.8"/>
+      <path d="M14 21V28Q18 34 21 27V20M37 17V23Q41 29 45 21V15M61 11V17Q65 21 68 13" fill="#fff6fa" stroke="#dba4b9" stroke-width="1.3"/>
+      <use href="#berry" transform="translate(42 -9) scale(.58) rotate(-15)"/>
+    </g>
+    <g transform="translate(223 266)" stroke="#c491a5" stroke-width="1.8" fill="#fffafb">
+      <ellipse cx="26" cy="31" rx="37" ry="5" fill="#f2cddd" stroke="none"/>
+      <path d="M46 1C72-4 64 26 45 19" fill="none" stroke-width="4"/>
+      <path d="M2 0H48L43 23Q25 36 8 23Z" fill="#fffafd"/>
+      <ellipse cx="25" cy="0" rx="23" ry="5" fill="#f2c5d4"/>
+      <path d="M21 11Q25 6 29 11Q31 16 25 20Q18 16 21 11Z" fill="#f6a9c6" stroke="none"/>
+      <path d="M17-13Q10-20 17-27M33-13Q26-20 33-27" fill="none" stroke="#d9b5c5" stroke-linecap="round"/>
+    </g>
+    <path d="M322 286Q341 268 354 284Q361 294 353 301H322Q314 295 322 286Z" fill="#fffdf9" stroke="#e2b7c6" stroke-width="1.6"/>
+    <path d="M330 282L334 279M340 283L344 280" stroke="#d6a181" stroke-width="2" stroke-linecap="round"/>
+    <g opacity=".9"><use href="#flower" transform="translate(53 302) scale(.8)"/><use href="#flower" transform="translate(390 301)"/><use href="#flower" transform="translate(536 303) scale(.8)"/><use href="#flower" transform="translate(944 304)"/><use href="#flower" transform="translate(573 317) scale(.65)"/></g>
+    <g fill="#fffdf8" stroke="#ecc4d3" stroke-width="1.3"><path d="M478 300L482 294L486 300L492 303L486 306L482 312L478 306L472 303Z"/><path d="M924 328L928 322L932 328L938 331H918Z"/></g>
+  </g>
+  <!-- Title sits inside its own quiet area, away from the three friends. -->
+  <g>
+    <rect x="69" y="65" width="190" height="25" rx="12.5" fill="#fffafc" stroke="#ebc1d2"/>
+    <path d="M84 75Q87 70 90 75Q93 70 96 75Q98 79 90 83Q82 79 84 75Z" fill="#e6a0bc"/>
+    <text x="105" y="81.5" fill="#ad7b91" font-family="Verdana, sans-serif" font-size="9.2" letter-spacing="1.7">SWEET LITTLE CORNER</text>
+    <text x="69" y="151" fill="#fffdfb" stroke="#fffdfb" stroke-width="7" stroke-linejoin="round" font-family="Georgia, 'Times New Roman', serif" font-size="61" font-weight="700" letter-spacing="-1.7">Caledvwlch</text>
+    <text x="69" y="151" fill="#a46d87" font-family="Georgia, 'Times New Roman', serif" font-size="61" font-weight="700" letter-spacing="-1.7">Caledvwlch</text>
+    <text x="73" y="184" fill="#a2788c" font-family="Verdana, sans-serif" font-size="14" letter-spacing=".65">cybersecurity study room</text>
+    <path d="M75 205H253" stroke="#e4b5c8" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M266 202Q270 196 274 202Q278 196 282 202Q285 207 274 213Q263 207 266 202Z" fill="#f6a9c6"/>
+    <path d="M295 205H382" stroke="#e4b5c8" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+  <!-- A bow, stars and strawberry garland. -->
+  <g transform="translate(484 58)" class="ink" fill="#f6a9c6"><path d="M0 0Q-28-23-29-3Q-30 15-4 6L-12 27L1 21L10 28L6 6Q34 16 31-3Q28-22 4 0Z"/><ellipse cx="2" cy="3" rx="6" ry="7" fill="#ffcfdf"/></g>
+  <path d="M612 29Q750 88 942 29" fill="none" stroke="#d5a4b7" stroke-width="1.5"/>
+  <use href="#berry" transform="translate(667 51) scale(.55) rotate(13)"/>
+  <use href="#berry" transform="translate(792 63) scale(.5) rotate(-11)"/>
+  <use href="#berry" transform="translate(908 43) scale(.55) rotate(15)"/>
+  <g transform="translate(554 150)"><g class="twinkle"><use href="#star"/></g></g>
+  <g transform="translate(729 111)"><g class="twinkle late"><use href="#star" transform="scale(.7)"/></g></g>
+  <g transform="translate(938 160)"><g class="twinkle later"><use href="#star" transform="scale(.9)"/></g></g>
+  <g transform="translate(596 230)"><g class="twinkle late"><use href="#star" transform="scale(.6)"/></g></g>
+  <use href="#sparkle" transform="translate(413 79)"/><use href="#sparkle" transform="translate(573 118)"/><use href="#sparkle" transform="translate(825 110)"/>
+  <!-- Chiikawa: round white ears, soft face, blush and little paws. -->
+  <ellipse cx="649" cy="300" rx="52" ry="8" fill="#dcb3bf" opacity=".3"/>
+  <g transform="translate(649 242)"><g class="bob">
+    <path class="ink" d="M-28 25Q-35 40-27 53Q-21 59-11 54Q0 58 11 54Q24 59 29 49Q33 37 24 25" fill="#fffdfb"/>
+    <ellipse class="ink" cx="-16" cy="54" rx="11" ry="6" fill="#fffdfb"/><ellipse class="ink" cx="17" cy="54" rx="11" ry="6" fill="#fffdfb"/>
+    <circle class="ink" cx="-36" cy="-39" r="15" fill="#fffdfb"/><circle class="ink" cx="36" cy="-39" r="15" fill="#fffdfb"/>
+    <circle cx="-36" cy="-39" r="7" fill="#f8d4df"/><circle cx="36" cy="-39" r="7" fill="#f8d4df"/>
+    <path class="ink" d="M-48-18Q-44-48-17-47Q0-52 18-47Q46-44 49-17Q57 7 38 24Q24 37 0 36Q-30 38-45 21Q-56 6-48-18Z" fill="#fffdfb"/>
+    <ellipse cx="-31" cy="9" rx="11" ry="7" fill="#f6b0c7"/><ellipse cx="32" cy="9" rx="11" ry="7" fill="#f6b0c7"/>
+    <g class="blink" fill="#745967"><ellipse cx="-19" cy="-2" rx="3.4" ry="5"/><ellipse cx="20" cy="-2" rx="3.4" ry="5"/><circle cx="-20" cy="-3" r="1" fill="#fff"/><circle cx="19" cy="-3" r="1" fill="#fff"/></g>
+    <path class="detail" d="M-4 7Q0 12 4 7M0 10V14Q-4 18-7 14M0 14Q4 18 7 14M-25-15L-17-17M17-17L25-15"/>
+    <path d="M-37 8L-35 12M-30 8L-28 12M27 8L29 12M34 8L36 12" stroke="#d78ca8" stroke-width="1.2" stroke-linecap="round"/>
+    <path class="ink" d="M-27 34Q-42 24-38 37Q-35 45-26 44M26 34Q40 22 39 36Q38 43 29 44" fill="#fffdfb"/>
+    <path d="M-8 38L0 44L8 38L0 35Z" fill="#f6a9c6" stroke="#cf91aa" stroke-width="1.2"/>
+  </g></g>
+  <!-- Hachiware: blue cap, pointed ears, a white muzzle and happy cat mouth. -->
+  <ellipse cx="764" cy="301" rx="51" ry="8" fill="#dcb3bf" opacity=".3"/>
+  <g transform="translate(764 239)"><g class="bob2">
+    <path class="ink" d="M-27 29Q-34 43-26 56L-10 57Q0 61 13 56Q33 63 29 42L24 28" fill="#fffdfb"/>
+    <ellipse class="ink" cx="-17" cy="57" rx="11" ry="6" fill="#fffdfb"/><ellipse class="ink" cx="18" cy="57" rx="11" ry="6" fill="#fffdfb"/>
+    <path class="ink" d="M-45-18L-45-52Q-44-61-35-56L-17-44Q0-48 17-44L36-57Q45-60 46-51L46-17Q57 2 44 22Q29 40 0 38Q-31 40-45 23Q-58 3-45-18Z" fill="#a5d8ef"/>
+    <path d="M-39-48L-38-29L-25-40ZM38-48L25-40L38-28Z" fill="#f8c9db"/>
+    <path d="M-48-5Q-37-25-17-19Q-3-15 0-34Q3-15 17-19Q37-25 49-5Q54 14 36 27Q20 39 0 36Q-22 39-38 27Q-54 14-48-5Z" fill="#fffdfb"/>
+    <ellipse cx="-30" cy="12" rx="11" ry="7" fill="#f6b0c7"/><ellipse cx="31" cy="12" rx="11" ry="7" fill="#f6b0c7"/>
+    <g class="blink blink2" fill="#745967"><ellipse cx="-18" cy="1" rx="3.4" ry="5"/><ellipse cx="19" cy="1" rx="3.4" ry="5"/></g>
+    <path class="detail" d="M-24-11Q-20-14-15-12M15-12Q20-14 24-11M-4 10L0 13L4 10M0 13V17Q-5 21-9 16M0 17Q5 21 9 16"/>
+    <path class="detail" d="M-41 5L-37 7M-42 13L-37 13M38 7L42 5M38 13H43"/>
+    <path class="ink" d="M-25 37Q-41 26-39 39Q-36 48-27 47M26 38Q39 27 39 40Q37 47 28 47" fill="#fffdfb"/>
+    <path d="M-12 40Q0 47 12 40L8 48H-8Z" fill="#a5d8ef"/>
+  </g></g>
+  <!-- Usagi: tall cream ears, tiny brow marks and an exuberant open mouth. -->
+  <ellipse cx="879" cy="302" rx="50" ry="8" fill="#dcb3bf" opacity=".3"/>
+  <g transform="translate(879 241)"><g class="bob3">
+    <path class="ink" d="M-26 27Q-35 41-26 55Q-17 62-8 55Q2 60 13 55Q26 62 30 49Q31 37 25 26" fill="#fff4cf"/>
+    <ellipse class="ink" cx="-17" cy="56" rx="11" ry="6" fill="#fff4cf"/><ellipse class="ink" cx="18" cy="56" rx="11" ry="6" fill="#fff4cf"/>
+    <path class="ink" d="M-32-36Q-45-69-39-99Q-37-112-28-108Q-17-104-16-42M13-42Q12-82 24-105Q32-119 39-109Q48-97 37-38" fill="#fff4cf"/>
+    <path d="M-30-51Q-36-81-31-98M25-52Q26-81 33-100" fill="none" stroke="#f6c0cc" stroke-width="7" stroke-linecap="round"/>
+    <path class="ink" d="M-46-17Q-41-45-16-43Q2-48 24-40Q46-34 49-11Q55 12 37 26Q23 37 0 35Q-26 39-43 23Q-54 7-46-17Z" fill="#fff4cf"/>
+    <ellipse cx="-31" cy="10" rx="10" ry="7" fill="#f6b0c7"/><ellipse cx="31" cy="10" rx="10" ry="7" fill="#f6b0c7"/>
+    <g class="blink blink3" fill="#745967"><ellipse cx="-18" cy="-1" rx="3.3" ry="4.7"/><ellipse cx="19" cy="-1" rx="3.3" ry="4.7"/></g>
+    <path class="detail" d="M-24-15L-17-17M16-17L23-15M-4 6L0 9L4 6"/>
+    <path d="M-7 13Q0 17 8 12Q9 28 1 28Q-7 27-7 13Z" fill="#bc7f8c" stroke="#866474" stroke-width="1.8"/>
+    <path d="M-3 24Q1 18 6 24Q4 29 1 27Z" fill="#f6b0c7"/>
+    <use href="#berry" transform="translate(0 44) scale(.64) rotate(-8)"/>
+    <path class="ink" d="M-26 36Q-24 25-15 33L-7 43Q-11 52-20 46ZM26 36Q26 26 17 33L8 43Q11 51 21 46Z" fill="#fff4cf"/>
+  </g></g>
+  <g transform="translate(612 145)"><path d="M-8-1Q-6-9 0-4Q6-9 8-1Q10 5 0 11Q-10 5-8-1Z" fill="#f6a9c6" stroke="#dba0b7" stroke-width="1.2"/></g>
+  <g transform="translate(955 235)"><g class="twinkle late"><path d="M-6-2Q-3-7 0-3Q4-7 7-2Q9 3 0 8Q-8 3-6-2Z" fill="#f6a9c6"/></g></g>
+  <rect x="28" y="28" width="944" height="304" rx="27" fill="none" stroke="#eac0d2" stroke-width="2"/>
+</svg>

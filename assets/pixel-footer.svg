@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="110" viewBox="0 0 1000 110" role="img" aria-labelledby="f-title f-desc" shape-rendering="crispEdges">
+  <title id="f-title">A little strawberry milk picnic</title>
+  <desc id="f-desc">An original cream pixel bunny with rosy cheeks and blue eyes sits at a pink picnic, surrounded by strawberry milk, cherries, hearts, clouds and gently twinkling stars.</desc>
+  <style>
+    .bob { animation: bob 6s steps(6, end) infinite; }
+    .late { animation-delay: -3s; }
+    .twinkle { animation: twinkle 5s ease-in-out infinite; }
+    .slow { animation-duration: 7s; animation-delay: -2s; }
+    @keyframes bob { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-2px); } }
+    @keyframes twinkle { 0%,100% { opacity: .65; } 50% { opacity: 1; } }
+    @media (prefers-reduced-motion: reduce) { .bob,.twinkle { animation: none; } }
+  </style>
+  <defs>
+    <g id="f-heart"><path fill="#db8ca6" d="M2 0h3v1h2V0h3v1h2v5h-2v2H8v2H6v2H4v-2H2V8H0V2h2Z"/><path fill="#f5b2c7" d="M2 2h3v1h2V2h3v3H8v2H6v2H4V7H2Z"/><path fill="#fff5e9" d="M2 2h2v2H2Z"/></g>
+    <g id="f-star"><path fill="#d9ba7c" d="M4 0h3v4h4v3H7v4H4V7H0V4h4Z"/><path fill="#ffe9ab" d="M4 2h3v3h2v1H6v3H5V6H2V5h2Z"/><path fill="#fff9ec" d="M4 4h2v2H4Z"/></g>
+    <g id="f-cherries"><path fill="#9ab7a0" d="M7 0h5v2h-2v3H8v5H6V5h2V2H7ZM10 2h3v2h2v5h-2V5h-3Z"/><path fill="#bdd7b6" d="M2 1h5v2h2v2H5V4H2Z"/><path fill="#d58aa4" d="M2 9h5v1h2v5H7v2H2v-2H0v-4h2ZM12 8h5v2h2v5h-2v2h-5v-2h-2v-5h2Z"/><path fill="#f4b0c2" d="M2 11h5v3H2ZM12 10h5v4h-5Z"/><path fill="#fff4e6" d="M2 11h2v2H2ZM12 10h2v2h-2Z"/></g>
+    <g id="f-milk"><path fill="#d99ab0" d="M3 0h10v2h2v4h2v20H0V6h2V2h1Z"/><path fill="#fff5e6" d="M4 2h8v2H4ZM2 8h13v16H2Z"/><path fill="#f8ccdb" d="M3 4h9v2H3ZM2 14h13v8H2Z"/><path fill="#d99ab0" d="M12 4h1v2h2v18h-3Z"/><path fill="#95b7cf" d="M5 0v-3h2V0Z"/><path fill="#b4cdab" d="M5 13h2v-2h2v2h2v2H5Z"/><path fill="#ea99b4" d="M5 15h6v4H9v2H7v-2H5Z"/><path fill="#fff5e6" d="M6 16h1v1H6Zm3 1h1v1H9Z"/><path fill="#fff" opacity=".65" d="M3 9h2v3H3Z"/></g>
+    <g id="f-bunny"><path fill="#cda2a9" d="M5 0h5v2h1v12h2V2h1V0h5v2h1v13h2v2h2v13h-2v3h-2v3h1v4H3v-4h1v-3H2v-3H0V17h2v-2h2V2h1Z"/><path fill="#fff7e8" d="M6 2h3v14H4v3H2v10h2v3h3v3H5v3h14v-3h-2v-3h3v-3h2V19h-2v-3h-5V2h3v14H9V2Z"/><path fill="#f5bfd0" d="M6 4h2v9H6Zm10 0h2v9h-2Z"/><path fill="#f6c1cd" d="M3 25h5v3H3Zm13 0h5v3h-5Z"/><path fill="#7d8caa" d="M7 21h3v4H7Zm7 0h3v4h-3Z"/><path fill="#b9d9ee" d="M8 22h1v2H8Zm7 0h1v2h-1Z"/><path fill="#fff" d="M7 21h1v1H7Zm7 0h1v1h-1Z"/><path fill="#bd919f" d="M11 26h2v1h-2Zm-1 2h1v1h-1Zm3 0h1v1h-1Z"/><path fill="#f5d7dd" d="M8 32h8v3H8Z"/><path fill="#cda2a9" d="M5 38h4v2H5Zm10 0h4v2h-4Z"/></g>
+    <g id="f-cloud"><path fill="#f5dae4" d="M8 0h14v4h8v4h8v8H0V8h4V4h4Z"/><path fill="#fff9ee" d="M10 2h10v4h8v4h8v4H2v-4h4V6h4Z"/></g>
+  </defs>
+  <path fill="#fff7ee" d="M16 14h968v4h8v8h8v70h-8v8H8v-8H0V26h8v-8h8Z"/>
+  <path fill="#f9e1e9" d="M16 14h968v2H16ZM8 18h8v2H8Zm976 0h8v2h-8Z"/>
+  <path fill="#f6ccdc" d="M0 88h1000v14h-8v4H8v-4H0Z"/>
+  <path fill="#fce3e9" d="M8 102h984v4H8Z"/>
+  <path fill="#fff0eb" d="M8 90h8v6h-8Zm8 6h8v6h-8Z"/>
+  <path fill="#fff0eb" d="M24 90h8v6h-8Zm8 6h8v6h-8Z"/>
+  <path fill="#fff0eb" d="M40 90h8v6h-8Zm8 6h8v6h-8Z"/>
+  <path fill="#fff0eb" d="M56 90h8v6h-8Zm8 6h8v6h-8Z"/>
+  <path fill="#fff0eb" d="M72 90h8v6h-8Zm8 6h8v6h-8Z"/>
+  <path fill="#fff0eb" d="M88 90h8v6h-8Zm8 6h8v6h-8Z"/>
+  <path fill="#fff0eb" d="M104 90h8v6h-8Zm8 6h8v6h-8Z"/>
+  <path fill="#fff0eb" d="M120 90h8v6h-8Zm8 6h8v6h-8Z"/>
+  <path fill="#fff0eb" d="M136 90h8v6h-8Zm8 6h8v6h-8Z"/>
+  <path fill="#fff0eb" d="M152 90h8v6h-8Zm8 6h8v6h-8Z"/>
+  <path fill="#fff0eb" d="M168 90h8v6h-8Zm8 6h8v6h-8Z"/>
+  <path fill="#fff0eb" d="M184 90h8v6h-8Zm8 6h8v6h-8Z"/>
+  <path fill="#fff0eb" d="M200 90h8v6h-8Zm8 6h8v6h-8Z"/>
+  <path fill="#fff0eb" d="M216 90h8v6h-8Zm8 6h8v6h-8Z"/>
+  <path fill="#fff0eb" d="M232 90h8v6h-8Zm8 6h8v6h-8Z"/>
+  <path fill="#fff0eb" d="M248 90h8v6h-8Zm8 6h8v6h-8Z"/>
+  <path fill="#fff0eb" d="M264 90h8v6h-8Zm8 6h8v6h-8Z"/>
+  <path fill="#fff0eb" d="M280 90h8v6h-8Zm8 6h8v6h-8Z"/>
+  <path fill="#fff0eb" d="M296 90h8v6h-8Zm8 6h8v6h-8Z"/>
+  <path fill="#fff0eb" d="M312 90h8v6h-8Zm8 6h8v6h-8Z"/>
+  <path fill="#fff0eb" d="M328 90h8v6h-8Zm8 6h8v6h-8Z"/>
+  <path fill="#fff0eb" d="M344 90h8v6h-8Zm8 6h8v6h-8Z"/>
+  <path fill="#fff0eb" d="M360 90h8v6h-8Zm8 6h8v6h-8Z"/>
+  <path fill="#fff0eb" d="M376 90h8v6h-8Zm8 6h8v6h-8Z"/>
+  <path fill="#fff0eb" d="M392 90h8v6h-8Zm8 6h8v6h-8Z"/>
+  <path fill="#fff0eb" d="M408 90h8v6h-8Zm8 6h8v6h-8Z"/>
+  <path fill="#fff0eb" d="M424 90h8v6h-8Zm8 6h8v6h-8Z"/>
+  <path fill="#fff0eb" d="M440 90h8v6h-8Zm8 6h8v6h-8Z"/>
+  <path fill="#fff0eb" d="M456 90h8v6h-8Zm8 6h8v6h-8Z"/>
+  <path fill="#fff0eb" d="M472 90h8v6h-8Zm8 6h8v6h-8Z"/>
+  <path fill="#fff0eb" d="M488 90h8v6h-8Zm8 6h8v6h-8Z"/>
+  <path fill="#fff0eb" d="M504 90h8v6h-8Zm8 6h8v6h-8Z"/>
+  <path fill="#fff0eb" d="M520 90h8v6h-8Zm8 6h8v6h-8Z"/>
+  <path fill="#fff0eb" d="M536 90h8v6h-8Zm8 6h8v6h-8Z"/>
+  <path fill="#fff0eb" d="M552 90h8v6h-8Zm8 6h8v6h-8Z"/>
+  <path fill="#fff0eb" d="M568 90h8v6h-8Zm8 6h8v6h-8Z"/>
+  <path fill="#fff0eb" d="M584 90h8v6h-8Zm8 6h8v6h-8Z"/>
+  <path fill="#fff0eb" d="M600 90h8v6h-8Zm8 6h8v6h-8Z"/>
+  <path fill="#fff0eb" d="M616 90h8v6h-8Zm8 6h8v6h-8Z"/>
+  <path fill="#fff0eb" d="M632 90h8v6h-8Zm8 6h8v6h-8Z"/>
+  <path fill="#fff0eb" d="M648 90h8v6h-8Zm8 6h8v6h-8Z"/>
+  <path fill="#fff0eb" d="M664 90h8v6h-8Zm8 6h8v6h-8Z"/>
+  <path fill="#fff0eb" d="M680 90h8v6h-8Zm8 6h8v6h-8Z"/>
+  <path fill="#fff0eb" d="M696 90h8v6h-8Zm8 6h8v6h-8Z"/>
+  <path fill="#fff0eb" d="M712 90h8v6h-8Zm8 6h8v6h-8Z"/>
+  <path fill="#fff0eb" d="M728 90h8v6h-8Zm8 6h8v6h-8Z"/>
+  <path fill="#fff0eb" d="M744 90h8v6h-8Zm8 6h8v6h-8Z"/>
+  <path fill="#fff0eb" d="M760 90h8v6h-8Zm8 6h8v6h-8Z"/>
+  <path fill="#fff0eb" d="M776 90h8v6h-8Zm8 6h8v6h-8Z"/>
+  <path fill="#fff0eb" d="M792 90h8v6h-8Zm8 6h8v6h-8Z"/>
+  <path fill="#fff0eb" d="M808 90h8v6h-8Zm8 6h8v6h-8Z"/>
+  <path fill="#fff0eb" d="M824 90h8v6h-8Zm8 6h8v6h-8Z"/>
+  <path fill="#fff0eb" d="M840 90h8v6h-8Zm8 6h8v6h-8Z"/>
+  <path fill="#fff0eb" d="M856 90h8v6h-8Zm8 6h8v6h-8Z"/>
+  <path fill="#fff0eb" d="M872 90h8v6h-8Zm8 6h8v6h-8Z"/>
+  <path fill="#fff0eb" d="M888 90h8v6h-8Zm8 6h8v6h-8Z"/>
+  <path fill="#fff0eb" d="M904 90h8v6h-8Zm8 6h8v6h-8Z"/>
+  <path fill="#fff0eb" d="M920 90h8v6h-8Zm8 6h8v6h-8Z"/>
+  <path fill="#fff0eb" d="M936 90h8v6h-8Zm8 6h8v6h-8Z"/>
+  <path fill="#fff0eb" d="M952 90h8v6h-8Zm8 6h8v6h-8Z"/>
+  <path fill="#fff0eb" d="M968 90h8v6h-8Zm8 6h8v6h-8Z"/>
+  <path fill="#fff0eb" d="M984 90h8v6h-8Zm8 6h8v6h-8Z"/>
+  <g transform="translate(28 39) scale(1)"><g><use href="#f-cloud"/></g></g>
+  <g transform="translate(152 19) scale(0.8)"><g><use href="#f-cloud"/></g></g>
+  <g transform="translate(328 35) scale(0.7)"><g><use href="#f-cloud"/></g></g>
+  <g transform="translate(644 28) scale(0.8)"><g><use href="#f-cloud"/></g></g>
+  <g transform="translate(808 16) scale(0.8)"><g><use href="#f-cloud"/></g></g>
+  <g transform="translate(934 42) scale(1)"><g><use href="#f-cloud"/></g></g>
+  <g transform="translate(87 35) scale(1)"><g class="bob"><use href="#f-heart"/></g></g>
+  <g transform="translate(240 25) scale(1)"><g class="twinkle"><use href="#f-star"/></g></g>
+  <g transform="translate(365 16) scale(1)"><g class="twinkle slow"><use href="#f-heart"/></g></g>
+  <g transform="translate(437 23) scale(1)"><g class="twinkle"><use href="#f-star"/></g></g>
+  <g transform="translate(547 18) scale(1)"><g class="bob late"><use href="#f-heart"/></g></g>
+  <g transform="translate(615 48) scale(1)"><g class="twinkle slow"><use href="#f-star"/></g></g>
+  <g transform="translate(708 28) scale(1)"><g class="bob"><use href="#f-heart"/></g></g>
+  <g transform="translate(880 33) scale(1)"><g class="twinkle"><use href="#f-star"/></g></g>
+  <g class="twinkle slow"><path fill="#b7d3e6" d="M128 65h2v2h2v2h-2v2h-2v-2h-2v-2h2Z"/></g>
+  <g class="twinkle slow"><path fill="#b7d3e6" d="M287 44h2v2h2v2h-2v2h-2v-2h-2v-2h2Z"/></g>
+  <g class="twinkle slow"><path fill="#b7d3e6" d="M398 53h2v2h2v2h-2v2h-2v-2h-2v-2h2Z"/></g>
+  <g class="twinkle slow"><path fill="#b7d3e6" d="M594 19h2v2h2v2h-2v2h-2v-2h-2v-2h2Z"/></g>
+  <g class="twinkle slow"><path fill="#b7d3e6" d="M764 61h2v2h2v2h-2v2h-2v-2h-2v-2h2Z"/></g>
+  <g class="twinkle slow"><path fill="#b7d3e6" d="M914 18h2v2h2v2h-2v2h-2v-2h-2v-2h2Z"/></g>
+  <path fill="#edbacb" d="M452 85h96v3h-96Z"/>
+  <g transform="translate(476 8) scale(2)"><g class="bob"><use href="#f-bunny"/></g></g>
+  <g transform="translate(419 45) scale(1.5)"><g class="bob late"><use href="#f-milk"/></g></g>
+  <g transform="translate(547 62) scale(1.5)"><g class="bob late"><use href="#f-cherries"/></g></g>
+  <g transform="translate(184 64) scale(1.25)"><g class="bob"><use href="#f-cherries"/></g></g>
+  <g transform="translate(785 47) scale(1.5)"><g class="bob late"><use href="#f-milk"/></g></g>
+  <g transform="translate(308 68) scale(1)"><g class="bob late"><use href="#f-heart"/></g></g>
+  <g transform="translate(672 68) scale(1)"><g class="bob"><use href="#f-heart"/></g></g>
+  <path fill="#b6c7b0" d="M58 82h2v6h-2Zm-4-2h4v3h-4Zm6-2h4v3h-4Z"/>
+  <path fill="#b6c7b0" d="M118 82h2v6h-2Zm-4-2h4v3h-4Zm6-2h4v3h-4Z"/>
+  <path fill="#b6c7b0" d="M246 82h2v6h-2Zm-4-2h4v3h-4Zm6-2h4v3h-4Z"/>
+  <path fill="#b6c7b0" d="M354 82h2v6h-2Zm-4-2h4v3h-4Zm6-2h4v3h-4Z"/>
+  <path fill="#b6c7b0" d="M625 82h2v6h-2Zm-4-2h4v3h-4Zm6-2h4v3h-4Z"/>
+  <path fill="#b6c7b0" d="M734 82h2v6h-2Zm-4-2h4v3h-4Zm6-2h4v3h-4Z"/>
+  <path fill="#b6c7b0" d="M854 82h2v6h-2Zm-4-2h4v3h-4Zm6-2h4v3h-4Z"/>
+  <path fill="#b6c7b0" d="M932 82h2v6h-2Zm-4-2h4v3h-4Zm6-2h4v3h-4Z"/>
+  <path fill="#e8abc2" d="M154 85h4v2h-4Z"/>
+  <path fill="#e8abc2" d="M274 85h4v2h-4Z"/>
+  <path fill="#e8abc2" d="M383 85h4v2h-4Z"/>
+  <path fill="#e8abc2" d="M603 85h4v2h-4Z"/>
+  <path fill="#e8abc2" d="M712 85h4v2h-4Z"/>
+  <path fill="#e8abc2" d="M897 85h4v2h-4Z"/>
+</svg>

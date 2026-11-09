@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="672" height="88" viewBox="0 0 672 88" role="img" aria-labelledby="title desc">
+  <title id="title">Tiny things on my workbench</title>
+  <desc id="desc">Three pastel pixel badges: code analysis, source and binary, and AI tools. Pink bows and tiny stars decorate the badges.</desc>
+  <style>
+    .label { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 14px; fill: #764454; }
+    .pixel { shape-rendering: crispEdges; }
+    .twinkle { animation: twinkle 3.8s ease-in-out infinite; }
+    .later { animation-delay: -1.9s; }
+    @keyframes twinkle { 0%,100% { opacity: .55; } 50% { opacity: 1; } }
+    @media (prefers-reduced-motion: reduce) { .twinkle { animation: none; } }
+  </style>
+  <defs>
+    <path id="star" d="M4 0h4v4h4v4H8v4H4V8H0V4h4z"/>
+    <path id="bow" d="M0 0h8v4h4V0h8v12h-8V8H8v4H0z"/>
+  </defs>
+  <g class="pixel">
+    <path d="M18 26h176v4h4v40h-4v4H18v-4h-4V30h4z" fill="#f5d4df"/>
+    <path d="M18 22h176v4h4v40h-4v4H18v-4h-4V26h4z" fill="#fff1f5" stroke="#e9b7c9" stroke-width="2"/>
+    <path d="M222 26h218v4h4v40h-4v4H222v-4h-4V30h4z" fill="#efdbed"/>
+    <path d="M222 22h218v4h4v40h-4v4H222v-4h-4V26h4z" fill="#faf1fc" stroke="#dcc0e1" stroke-width="2"/>
+    <path d="M468 26h186v4h4v40h-4v4H468v-4h-4V30h4z" fill="#f3d9ca"/>
+    <path d="M468 22h186v4h4v40h-4v4H468v-4h-4V26h4z" fill="#fff4eb" stroke="#eac6b3" stroke-width="2"/>
+    <use href="#bow" x="96" y="16" fill="#e995b3"/>
+    <use href="#bow" x="321" y="16" fill="#c9a1cf"/>
+    <use href="#bow" x="551" y="16" fill="#e6ad95"/>
+    <use href="#star" x="35" y="40" fill="#d887a5"/>
+    <use href="#star" x="633" y="4" fill="#e2b270" class="twinkle"/>
+    <use href="#star" x="207" y="7" fill="#de9cb8" class="twinkle later"/>
+    <path d="M238 43h4v4h-4zm8 4h4v4h-4zm-8 4h4v4h-4z" fill="#b68abd"/>
+    <path d="M481 41h4v4h4v4h-4v4h-4v-4h-4v-4h4z" fill="#d49d81"/>
+  </g>
+  <g class="label" text-anchor="middle">
+    <text x="119" y="51">code analysis</text>
+    <text x="342" y="51">security lab</text>
+    <text x="568" y="51">AI tools</text>
+  </g>
+</svg>

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="48" viewBox="0 0 1000 48" role="img" aria-labelledby="d-title d-desc" shape-rendering="crispEdges">
+  <title id="d-title">Strawberry milk pixel ribbon</title>
+  <desc id="d-desc">A cream and pink pixel ribbon with softly bobbing strawberry milk, cherries, hearts and blue and butter-yellow stars.</desc>
+  <style>
+    .bob { animation: bob 6s steps(6, end) infinite; }
+    .late { animation-delay: -3s; }
+    .twinkle { animation: twinkle 5s ease-in-out infinite; }
+    .slow { animation-duration: 7s; animation-delay: -2s; }
+    @keyframes bob { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-2px); } }
+    @keyframes twinkle { 0%,100% { opacity: .65; } 50% { opacity: 1; } }
+    @media (prefers-reduced-motion: reduce) { .bob,.twinkle { animation: none; } }
+  </style>
+  <defs>
+    <g id="d-heart"><path fill="#db8ca6" d="M2 0h3v1h2V0h3v1h2v5h-2v2H8v2H6v2H4v-2H2V8H0V2h2Z"/><path fill="#f5b2c7" d="M2 2h3v1h2V2h3v3H8v2H6v2H4V7H2Z"/><path fill="#fff5e9" d="M2 2h2v2H2Z"/></g>
+    <g id="d-star"><path fill="#d9ba7c" d="M4 0h3v4h4v3H7v4H4V7H0V4h4Z"/><path fill="#ffe9ab" d="M4 2h3v3h2v1H6v3H5V6H2V5h2Z"/><path fill="#fff9ec" d="M4 4h2v2H4Z"/></g>
+    <g id="d-cherries"><path fill="#9ab7a0" d="M7 0h5v2h-2v3H8v5H6V5h2V2H7ZM10 2h3v2h2v5h-2V5h-3Z"/><path fill="#bdd7b6" d="M2 1h5v2h2v2H5V4H2Z"/><path fill="#d58aa4" d="M2 9h5v1h2v5H7v2H2v-2H0v-4h2ZM12 8h5v2h2v5h-2v2h-5v-2h-2v-5h2Z"/><path fill="#f4b0c2" d="M2 11h5v3H2ZM12 10h5v4h-5Z"/><path fill="#fff4e6" d="M2 11h2v2H2ZM12 10h2v2h-2Z"/></g>
+    <g id="d-milk"><path fill="#d99ab0" d="M3 0h10v2h2v4h2v20H0V6h2V2h1Z"/><path fill="#fff5e6" d="M4 2h8v2H4ZM2 8h13v16H2Z"/><path fill="#f8ccdb" d="M3 4h9v2H3ZM2 14h13v8H2Z"/><path fill="#d99ab0" d="M12 4h1v2h2v18h-3Z"/><path fill="#95b7cf" d="M5 0v-3h2V0Z"/><path fill="#b4cdab" d="M5 13h2v-2h2v2h2v2H5Z"/><path fill="#ea99b4" d="M5 15h6v4H9v2H7v-2H5Z"/><path fill="#fff5e6" d="M6 16h1v1H6Zm3 1h1v1H9Z"/><path fill="#fff" opacity=".65" d="M3 9h2v3H3Z"/></g>
+    <g id="d-bunny"><path fill="#cda2a9" d="M5 0h5v2h1v12h2V2h1V0h5v2h1v13h2v2h2v13h-2v3h-2v3h1v4H3v-4h1v-3H2v-3H0V17h2v-2h2V2h1Z"/><path fill="#fff7e8" d="M6 2h3v14H4v3H2v10h2v3h3v3H5v3h14v-3h-2v-3h3v-3h2V19h-2v-3h-5V2h3v14H9V2Z"/><path fill="#f5bfd0" d="M6 4h2v9H6Zm10 0h2v9h-2Z"/><path fill="#f6c1cd" d="M3 25h5v3H3Zm13 0h5v3h-5Z"/><path fill="#7d8caa" d="M7 21h3v4H7Zm7 0h3v4h-3Z"/><path fill="#b9d9ee" d="M8 22h1v2H8Zm7 0h1v2h-1Z"/><path fill="#fff" d="M7 21h1v1H7Zm7 0h1v1h-1Z"/><path fill="#bd919f" d="M11 26h2v1h-2Zm-1 2h1v1h-1Zm3 0h1v1h-1Z"/><path fill="#f5d7dd" d="M8 32h8v3H8Z"/><path fill="#cda2a9" d="M5 38h4v2H5Zm10 0h4v2h-4Z"/></g>
+    <g id="d-cloud"><path fill="#f5dae4" d="M8 0h14v4h8v4h8v8H0V8h4V4h4Z"/><path fill="#fff9ee" d="M10 2h10v4h8v4h8v4H2v-4h4V6h4Z"/></g>
+  </defs>
+  <path fill="#fff7ed" d="M8 6h984v4h8v28h-8v4H8v-4H0V10h8Z"/>
+  <path fill="#f7d8e3" d="M8 6h984v2H8ZM8 40h984v2H8Z"/>
+  <path fill="#f2c8d9" d="M0 22h1000v4H0Z"/>
+  <path fill="#fff7ed" d="M0 23h1000v2H0Z"/>
+  <path fill="#f0b9ce" d="M24 21h4v4h-4Z"/>
+  <path fill="#bcd6e8" d="M82 21h4v4h-4Z"/>
+  <path fill="#f0b9ce" d="M140 21h4v4h-4Z"/>
+  <path fill="#bcd6e8" d="M198 21h4v4h-4Z"/>
+  <path fill="#f0b9ce" d="M256 21h4v4h-4Z"/>
+  <path fill="#bcd6e8" d="M314 21h4v4h-4Z"/>
+  <path fill="#f0b9ce" d="M372 21h4v4h-4Z"/>
+  <path fill="#bcd6e8" d="M430 21h4v4h-4Z"/>
+  <path fill="#f0b9ce" d="M488 21h4v4h-4Z"/>
+  <path fill="#bcd6e8" d="M546 21h4v4h-4Z"/>
+  <path fill="#f0b9ce" d="M604 21h4v4h-4Z"/>
+  <path fill="#bcd6e8" d="M662 21h4v4h-4Z"/>
+  <path fill="#f0b9ce" d="M720 21h4v4h-4Z"/>
+  <path fill="#bcd6e8" d="M778 21h4v4h-4Z"/>
+  <path fill="#f0b9ce" d="M836 21h4v4h-4Z"/>
+  <path fill="#bcd6e8" d="M894 21h4v4h-4Z"/>
+  <path fill="#f0b9ce" d="M952 21h4v4h-4Z"/>
+  <g transform="translate(62 15) scale(1.5)"><g class="bob"><use href="#d-heart"/></g></g>
+  <g transform="translate(140 14) scale(1.5)"><g class="twinkle"><use href="#d-star"/></g></g>
+  <g transform="translate(214 11) scale(1.5)"><g class="bob late"><use href="#d-cherries"/></g></g>
+  <g transform="translate(312 15) scale(1.5)"><g class="twinkle slow"><use href="#d-heart"/></g></g>
+  <g transform="translate(396 7) scale(1.25)"><g class="bob"><use href="#d-milk"/></g></g>
+  <g transform="translate(487 14) scale(1.5)"><g class="twinkle"><use href="#d-star"/></g></g>
+  <g transform="translate(578 7) scale(1.25)"><g class="bob late"><use href="#d-milk"/></g></g>
+  <g transform="translate(674 15) scale(1.5)"><g class="twinkle slow"><use href="#d-heart"/></g></g>
+  <g transform="translate(756 11) scale(1.5)"><g class="bob"><use href="#d-cherries"/></g></g>
+  <g transform="translate(852 14) scale(1.5)"><g class="twinkle"><use href="#d-star"/></g></g>
+  <g transform="translate(928 15) scale(1.5)"><g class="bob late"><use href="#d-heart"/></g></g>
+</svg>
