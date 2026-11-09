@@ -1,6 +1,9 @@
 <p align="center">
   <img src="assets/nameplate-v2.svg" width="100%" alt="Caledvwlch" />
-  <img src="assets/chiikawa-banner.png" width="100%" alt="Chiikawa, Hachiware and Usagi at a strawberry-milk picnic" />
+  <picture>
+    <source media="(prefers-reduced-motion: reduce)" srcset="assets/chiikawa-banner.png" />
+    <img src="assets/chiikawa-banner-animated.gif" width="100%" alt="Chiikawa, Hachiware and Usagi blinking and wiggling at a strawberry-milk picnic" />
+  </picture>
 </p>
 
 <p align="center">
