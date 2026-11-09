@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="46" viewBox="0 0 620 46" role="img" aria-labelledby="st-title st-desc" shape-rendering="crispEdges">
+  <title id="st-title">bugs &amp; strawberry milk</title>
+  <desc id="st-desc">Pastel pink and cream pixel status ribbon reading bugs and strawberry milk, decorated with a tiny pixel strawberry, strawberry milk carton, pixel hearts, and a decorative typing cursor.</desc>
+  <style>
+    .status-text { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 12.5px; font-weight: 700; fill: #6e4555; }
+    .cursor-deco {
+      opacity: 0.88;
+      animation: cursor-soft 2.8s ease-in-out infinite;
+    }
+    .twinkle-a { animation: twinkle 4s ease-in-out infinite; }
+    .twinkle-b { animation: twinkle 4.8s ease-in-out -2.2s infinite; }
+    .bob-soft { animation: bob 5.4s steps(2, end) infinite; }
+    @keyframes cursor-soft {
+      0%, 100% { opacity: 0.42; }
+      50% { opacity: 0.95; }
+    }
+    @keyframes twinkle {
+      0%, 100% { opacity: 0.7; }
+      50% { opacity: 1; }
+    }
+    @keyframes bob {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-1px); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .cursor-deco, .twinkle-a, .twinkle-b, .bob-soft {
+        animation: none;
+        opacity: 1;
+        transform: none;
+      }
+    }
+  </style>
+  <defs>
+    <g id="st-heart">
+      <path fill="#c97b96" d="M2 0h3v1h2V0h3v1h2v4h-2v2H8v2H6v2H4V9H2V7H0V1h2Z"/>
+      <path fill="#f4b2c8" d="M2 1h3v2h2V1h3v3H8v2H6v2H4V6H2Z"/>
+      <path fill="#fff8f0" d="M2 2h2v1H2Z"/>
+    </g>
+    <g id="st-sparkle">
+      <path fill="#7fa6c4" d="M3 0h2v3h3v2H5v3H3V5H0V3h3Z"/>
+      <path fill="#dff0fa" d="M3 2h2v4H3ZM2 3h4v2H2Z"/>
+    </g>
+    <!-- Tiny pixel strawberry (16x18) -->
+    <g id="st-strawberry">
+      <path fill="#6e4555" d="M6 0h4v2h4v2H2V2h4Z"/>
+      <path fill="#aed0ea" d="M6 2h4v2H6ZM3 3h10v2H3Z"/>
+      <path fill="#6e4555" d="M2 4h12v2h2v6h-2v2h-2v2h-2v2H6v-2H4v-2H2v-2H0V6h2Z"/>
+      <path fill="#d88ca6" d="M2 6h12v6h-2v2h-2v2H6v-2H4v-2H2Z"/>
+      <path fill="#f4b2c8" d="M3 6h9v5h-2v2H5v-2H3Z"/>
+      <path fill="#fff8f0" d="M4 7h2v2H4Zm5 1h2v2H9Zm-3 3h2v2H6Zm5 1h1v1h-1Z"/>
+    </g>
+    <!-- Tiny pixel strawberry milk carton (18x24) -->
+    <g id="st-milk">
+      <path fill="#7fa6c4" d="M11 0h4v2h-2v3h-2V0Z"/>
+      <path fill="#dff0fa" d="M12 0h2v2h-2Z"/>
+      <path fill="#6e4555" d="M3 4h12v2h2v4h2v14H1V10h2V6h0V4Z"/>
+      <path fill="#fdebf2" d="M4 6h10v2H4Z"/>
+      <path fill="#f4b2c8" d="M3 8h12v2H3Z"/>
+      <path fill="#fff8f0" d="M3 10h14v12H3Z"/>
+      <path fill="#f7c2d4" d="M3 14h14v6H3Z"/>
+      <path fill="#e7bfd0" d="M14 10h3v12h-3Z"/>
+      <path fill="#c97b96" d="M7 14h4v4H9v2H7v-2H6v-2h1Z"/>
+      <path fill="#fff8f0" d="M8 15h1v1H8Z"/>
+    </g>
+  </defs>
+
+  <!-- Left & right pixel ribbon tails -->
+  <path fill="#c97b96" d="M10 15h18v16H10v-2H6v-4h4v-4H6v-4h4v-2Z"/>
+  <path fill="#f2adc4" d="M12 17h16v12H12v-2H8v-2h4v-4H8v-2h4v-2Z"/>
+  <path fill="#fdebf2" d="M12 19h12v2H12Z"/>
+
+  <path fill="#c97b96" d="M592 15h18v2h4v4h-4v4h4v4h-4v2h-18V15Z"/>
+  <path fill="#f2adc4" d="M592 17h16v2h4v2h-4v4h4v2h-4v2h-16V17Z"/>
+  <path fill="#fdebf2" d="M596 19h12v2h-12Z"/>
+
+  <!-- Soft blush drop shadow -->
+  <path fill="#e7bfd0" d="M28 9h568v2h2v28h-2v2H28v-2h-2V11h2Z"/>
+
+  <!-- Main status pill outer border (rose-cocoa) -->
+  <path fill="#6e4555" d="M26 6h568v2h2v30h-2v2H26v-2h-2V8h2Z"/>
+
+  <!-- Main status pill fill (warm cream with blush caps) -->
+  <path fill="#fff8f0" d="M26 8h568v30H26Z"/>
+  <path fill="#fae6ee" d="M26 8h64v30H26Zm504 0h64v30h-64Z"/>
+  <path fill="#f2adc4" d="M90 8h2v30h-2Zm438 0h2v30h-2Z"/>
+
+  <!-- Top & bottom inner pixel stitch trim -->
+  <path fill="#fdebf2" d="M92 8h436v2H92Z"/>
+  <path fill="#fae6ee" d="M92 36h436v2H92Z"/>
+
+  <!-- Left cap decorative pixel cluster (heart + blue sparkle + stitches) -->
+  <path fill="#f2adc4" d="M36 22h6v2h-6Zm38 0h6v2h-6Z"/>
+  <g transform="translate(48 18)"><g class="twinkle-a"><use href="#st-heart"/></g></g>
+  <g transform="translate(66 12)"><g class="twinkle-b"><use href="#st-sparkle"/></g></g>
+
+  <!-- Right cap decorative pixel cluster -->
+  <path fill="#f2adc4" d="M540 22h6v2h-6Zm38 0h6v2h-6Z"/>
+  <g transform="translate(560 18)"><g class="twinkle-b"><use href="#st-heart"/></g></g>
+  <g transform="translate(546 12)"><g class="twinkle-a"><use href="#st-sparkle"/></g></g>
+
+  <!-- Inner left icons: tiny pixel strawberry + pixel heart (x=146..182, outside safe zone x=194..398) -->
+  <g transform="translate(146 14)"><g class="bob-soft"><use href="#st-strawberry"/></g></g>
+  <g transform="translate(170 18)"><g class="twinkle-a"><use href="#st-heart"/></g></g>
+
+  <!-- Center English status text -->
+  <g class="status-text" text-anchor="middle">
+    <text x="292" y="27">bugs &amp; strawberry milk</text>
+  </g>
+
+  <!-- Decorative subtle typing cursor (not fake live activity) -->
+  <g class="cursor-deco">
+    <path fill="#c97b96" d="M384 15h8v15h-8Z"/>
+    <path fill="#f4b2c8" d="M386 17h4v11h-4Z"/>
+    <path fill="#fff8f0" d="M386 17h2v4h-2Z"/>
+  </g>
+
+  <!-- Inner right icons: tiny pixel strawberry milk + pixel heart + blue sparkle (x=416..468, outside safe zone x=194..398) -->
+  <g transform="translate(416 11)"><g class="bob-soft"><use href="#st-milk"/></g></g>
+  <g transform="translate(442 18)"><g class="twinkle-b"><use href="#st-heart"/></g></g>
+  <g transform="translate(460 14)"><g class="twinkle-a"><use href="#st-sparkle"/></g></g>
+</svg>

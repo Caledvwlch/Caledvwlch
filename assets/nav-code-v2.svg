@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="260" height="70" viewBox="0 0 260 70" role="img" aria-labelledby="nc-title nc-desc" shape-rendering="crispEdges">
+  <title id="nc-title">repositories</title>
+  <desc id="nc-desc">Pink pixel browser-tab ribbon button with a handmade pixel folder and mini terminal icon for repositories.</desc>
+  <style>
+    .label { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 12px; font-weight: 700; fill: #6e4555; }
+    .twinkle-a { animation: twinkle 3.8s ease-in-out infinite; }
+    .twinkle-b { animation: twinkle 4.6s ease-in-out -1.9s infinite; }
+    .float-slow { animation: bob 5.2s steps(2, end) infinite; }
+    @keyframes twinkle {
+      0%, 100% { opacity: 0.72; }
+      50% { opacity: 1; }
+    }
+    @keyframes bob {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-1px); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .twinkle-a, .twinkle-b, .float-slow { animation: none; opacity: 1; transform: none; }
+    }
+  </style>
+  <defs>
+    <g id="nc-heart">
+      <path fill="#c97b96" d="M2 0h3v1h2V0h3v1h2v4h-2v2H8v2H6v2H4V9H2V7H0V1h2Z"/>
+      <path fill="#f4b2c8" d="M2 1h3v2h2V1h3v3H8v2H6v2H4V6H2Z"/>
+      <path fill="#fff8f0" d="M2 2h2v1H2Z"/>
+    </g>
+    <g id="nc-heart-sm">
+      <path fill="#c97b96" d="M1 0h2v1h2V0h2v1h1v3H7v1H5v2H3V5H1V4H0V1h1Z"/>
+      <path fill="#f7c2d4" d="M1 1h2v1h2V1h2v2H5v2H3V3H1Z"/>
+      <path fill="#fff8f0" d="M1 1h1v1H1Z"/>
+    </g>
+    <g id="nc-sparkle-blue">
+      <path fill="#7fa6c4" d="M3 0h2v3h3v2H5v3H3V5H0V3h3Z"/>
+      <path fill="#dff0fa" d="M3 2h2v4H3ZM2 3h4v2H2Z"/>
+    </g>
+    <g id="nc-bow">
+      <path fill="#c97b96" d="M2 0h5v2h2v1h2V2h2V0h5v2h2v8h-2v2h-5v-2h-2V9H9v1H7v2H2v-2H0V2h2Z"/>
+      <path fill="#f4b2c8" d="M2 2h5v2h1v4H7v2H2V2Zm11 0h5v8h-5V8h-1V4h1V2Z"/>
+      <path fill="#fdebf2" d="M3 3h3v2H3Zm11 0h3v2h-3Z"/>
+      <path fill="#fff8f0" d="M8 4h4v4H8Z"/>
+    </g>
+  </defs>
+
+  <!-- Left and right ribbon tails -->
+  <path fill="#c97b96" d="M4 28h12v18H4v-2H2v-4h2v-2H0v-4h2v-2h2v-4Z"/>
+  <path fill="#f2adc4" d="M6 30h10v14H6v-2H4v-4h2v-2H4v-4h2v-2Z"/>
+  <path fill="#fdebf2" d="M6 32h8v2H6Z"/>
+
+  <path fill="#c97b96" d="M244 28h12v4h2v2h2v4h-2v2h-2v4h-2v2h-10V28Z"/>
+  <path fill="#f2adc4" d="M244 30h10v2h2v4h-2v2h2v4h-2v2h-10V30Z"/>
+  <path fill="#fdebf2" d="M246 32h8v2h-8Z"/>
+
+  <!-- Soft pixel drop shadow -->
+  <path fill="#e7bfd0" d="M18 14h228v2h2v44h-2v2H18v-2h-2V16h2Z"/>
+
+  <!-- Outer browser-tab frame (2px pixel border in rose-cocoa) -->
+  <path fill="#6e4555" d="M16 10h228v2h2v46h-2v2H16v-2h-2V12h2Z"/>
+
+  <!-- Inner card base (warm cream) -->
+  <path fill="#fff8f0" d="M16 12h228v46H16Z"/>
+
+  <!-- Browser tab top bar (blush pink) -->
+  <path fill="#f6c4d6" d="M16 12h228v12H16Z"/>
+  <path fill="#fdebf2" d="M16 12h228v2H16Z"/>
+  <!-- Active tab ear highlight on top bar -->
+  <path fill="#fff8f0" d="M54 14h78v10H54Z"/>
+  <path fill="#c97b96" d="M52 14h2v8h-2Zm80 0h2v8h-2ZM54 12h78v2H54Z"/>
+  <path fill="#aed0ea" d="M58 17h4v4h-4Z"/>
+  <path fill="#f2adc4" d="M66 18h28v2H66Zm32 0h22v2H98Z"/>
+
+  <!-- Tab bar divider line -->
+  <path fill="#c97b96" d="M16 22h38v2H16Zm116 0h112v2H132Z"/>
+  <path fill="#fae6ee" d="M54 22h78v2H54Z"/>
+
+  <!-- Browser traffic-light pixel dots (blush, cream, blue) -->
+  <path fill="#c97b96" d="M22 15h6v6h-6Z"/>
+  <path fill="#f2adc4" d="M23 16h4v4h-4Z"/>
+  <path fill="#c97b96" d="M32 15h6v6h-6Z"/>
+  <path fill="#fff8f0" d="M33 16h4v4h-4Z"/>
+  <path fill="#7fa6c4" d="M42 15h6v6h-6Z"/>
+  <path fill="#aed0ea" d="M43 16h4v4h-4Z"/>
+
+  <!-- Right tab bar address dots -->
+  <path fill="#fff8f0" d="M142 16h58v4h-58Z"/>
+  <path fill="#c97b96" d="M206 17h4v2h-4Zm8 0h4v2h-4Z"/>
+
+  <!-- Inner cream frame trim & corner stitches -->
+  <path fill="#fae6ee" d="M16 24h228v2H16Zm0 32h228v2H16ZM16 26h2v30h-2Zm226 0h2v30h-2Z"/>
+  <path fill="#f2adc4" d="M20 53h6v2h-6Zm10 0h6v2h-6Zm194 0h6v2h-6Z"/>
+  <path fill="#aed0ea" d="M214 53h6v2h-6Z"/>
+
+  <!-- Handmade Pixel Icon: Folder + Little Terminal (x=24..76, y=27..53) -->
+  <!-- Folder back & tab -->
+  <path fill="#6e4555" d="M24 27h12v2h12v2h2v18H22V29h2Z"/>
+  <path fill="#f2adc4" d="M24 29h12v2h12v16H24Z"/>
+  <path fill="#fdebf2" d="M24 29h10v2H24Zm0 4h22v2H24Z"/>
+  <path fill="#fff8f0" d="M26 31h18v2H26Z"/>
+  <path fill="#f7c2d4" d="M24 35h24v12H24Z"/>
+
+  <!-- Little Terminal overlapping front-right of folder -->
+  <path fill="#6e4555" d="M38 33h28v2h2v16h-2v2H38v-2h-2V35h2Z"/>
+  <path fill="#aed0ea" d="M38 35h28v4H38Z"/>
+  <path fill="#dff0fa" d="M38 35h28v2H38Z"/>
+  <path fill="#7fa6c4" d="M38 39h28v2H38Z"/>
+  <!-- Mini terminal header dots -->
+  <path fill="#f2adc4" d="M40 36h2v2h-2Z"/>
+  <path fill="#fff8f0" d="M44 36h2v2h-2Z"/>
+  <!-- Mini terminal screen -->
+  <path fill="#fff8f0" d="M38 41h28v10H38Z"/>
+  <path fill="#fae6ee" d="M38 49h28v2H38Z"/>
+  <!-- Terminal prompt >_ in berry & blue -->
+  <path fill="#c97b96" d="M42 43h2v2h-2Zm2 2h2v2h-2Zm-2 2h2v2h-2Z"/>
+  <path fill="#7fa6c4" d="M48 47h6v2h-6Z"/>
+  <!-- Tiny pixel heart on terminal screen -->
+  <path fill="#f2adc4" d="M58 43h2v1h2v-1h2v3h-2v2h-2v-2h-2Z"/>
+
+  <!-- Readable English label -->
+  <g class="label" text-anchor="middle">
+    <text x="146" y="43">repositories</text>
+  </g>
+
+  <!-- Subtle stitched underline + clickable arrow pill -->
+  <path fill="#f2adc4" d="M96 49h68v2H96Z"/>
+  <path fill="#aed0ea" d="M168 49h28v2h-28Z"/>
+  <!-- Cute pixel button chevron on right -->
+  <path fill="#fae6ee" d="M220 33h14v14h-14Z"/>
+  <path fill="#c97b96" d="M220 31h14v2h-14Zm0 16h14v2h-14Zm-2-14h2v14h-2Zm16 0h2v14h-2Z"/>
+  <path fill="#6e4555" d="M224 36h2v2h2v2h2v2h-2v2h-2v2h-2v-2h2v-2h2v-2h-2v-2h-2Z"/>
+
+  <!-- Decorative top-right bow & twinkling hearts/sparkles -->
+  <g transform="translate(216 4)"><use href="#nc-bow"/></g>
+  <g transform="translate(72 27)"><g class="twinkle-a"><use href="#nc-heart-sm"/></g></g>
+  <g transform="translate(208 25)"><g class="twinkle-b"><use href="#nc-sparkle-blue"/></g></g>
+  <g transform="translate(10 6)"><g class="float-slow"><g class="twinkle-a"><use href="#nc-heart"/></g></g></g>
+</svg>

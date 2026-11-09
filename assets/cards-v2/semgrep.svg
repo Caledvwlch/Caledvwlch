@@ -1,0 +1,186 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="100" viewBox="0 0 300 100" role="img" aria-labelledby="semgrep-title semgrep-desc">
+  <title id="semgrep-title">Semgrep — code analysis</title>
+  <desc id="semgrep-desc">Strawberry-milk and Hachiware sky-blue kawaii sticker card for Semgrep (code analysis) with a ribbon bow, code brackets, and star wand.</desc>
+  <style>
+    .pixel { shape-rendering: crispEdges; }
+    .bob { animation: bob 5.4s steps(4, end) infinite; }
+    .twinkle { animation: twinkle 4s ease-in-out infinite; }
+    .twinkle-late { animation: twinkle 4.6s ease-in-out -2.2s infinite; }
+    .tool-name {
+      font-family: ui-rounded, -apple-system, BlinkMacSystemFont, Comfortaa, Nunito, Helvetica, Arial, sans-serif;
+      font-size: 20px;
+      font-weight: 800;
+      fill: #5b3240;
+      letter-spacing: 0.3px;
+    }
+    .tool-cat {
+      font-family: ui-rounded, -apple-system, BlinkMacSystemFont, Comfortaa, Nunito, Helvetica, Arial, sans-serif;
+      font-size: 11.8px;
+      font-weight: 700;
+      fill: #693b4b;
+      letter-spacing: 0.15px;
+    }
+    @keyframes bob {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-2px); }
+    }
+    @keyframes twinkle {
+      0%, 100% { opacity: 0.6; }
+      50% { opacity: 1; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .bob, .twinkle, .twinkle-late { animation: none; }
+    }
+  </style>
+  <defs>
+    <!-- Gingham pattern for left charm medallion -->
+    <pattern id="gingham-semgrep" width="12" height="12" patternUnits="userSpaceOnUse" class="pixel">
+      <rect width="12" height="12" fill="#e4f2fd"/>
+      <rect width="6" height="12" fill="#c6e2fa" opacity="0.58"/>
+      <rect width="12" height="6" fill="#c6e2fa" opacity="0.58"/>
+    </pattern>
+    <!-- Top header stripe pattern -->
+    <pattern id="stripe-semgrep" width="16" height="8" patternUnits="userSpaceOnUse" class="pixel">
+      <rect width="16" height="8" fill="#ffe6ef"/>
+      <rect width="8" height="8" fill="#ffd4e3" opacity="0.7"/>
+    </pattern>
+    <!-- Gold pixel star (11x11) -->
+    <g id="star-gold-semgrep" class="pixel">
+      <path fill="#c99742" d="M4 0h3v4h4v3H7v4H4V7H0V4h4Z"/>
+      <path fill="#ffe694" d="M4 2h3v2h2v3H7v2H4V7H2V4h2Z"/>
+      <path fill="#fffdf4" d="M4 4h3v3H4Z"/>
+    </g>
+    <!-- Mini pixel heart (9x8) -->
+    <g id="heart-mini-semgrep" class="pixel">
+      <path fill="#b85876" d="M1 0h3v1h1V0h3v1h1v4H8v1H6v1H5v1H4V7H3V6H1V5H0V1h1Z"/>
+      <path fill="#f7a8c0" d="M1 1h3v1h1V1h3v3H6v2H4V4H1Z"/>
+      <path fill="#fff7fa" d="M2 2h1v1H2Z"/>
+    </g>
+    <!-- Tiny Strawberry Corner Garnish (10x12) -->
+    <g id="berry-mini-semgrep" class="pixel">
+      <path fill="#6d8f58" d="M3 0h4v1h2v2H2V1h1Z"/>
+      <path fill="#9ec484" d="M3 1h4v1H3Z"/>
+      <path fill="#754351" d="M1 3h8v1h1v4H9v2H7v2H3v-2H1V8H0V4h1Z"/>
+      <path fill="#f27d9c" d="M2 3h6v1h1v4H8v2H6v1H4v-1H2V8H1V4h1Z"/>
+      <path fill="#ffd9e5" d="M3 4h1v2H3Zm3 1h1v1H6Zm-2 3h1v1H4Z"/>
+    </g>
+  </defs>
+
+  <!-- Die-Cut Sticker Shadow & Outer Stepped Pixel Frame -->
+  <g class="pixel">
+    <!-- Offset soft rose shadow -->
+    <path fill="#ecd0dc" d="M15 13h71v3h6v-3h192v4h4v72h-4v4H94v-3h-6v3H15v-4h-4V17h4Z"/>
+    <!-- Warm cocoa-berry outer border with ticket notches at x=87..93 -->
+    <path fill="#754351" d="M13 9h71v3h6V9h194v4h4v74h-4v4H92v-3h-6v3H13v-4H9V13h4Z"/>
+    <!-- Thick creamy-white die-cut sticker rim -->
+    <path fill="#fffaf6" d="M15 11h68v3h8v-3h191v3h3v72h-3v3H93v-3h-8v3H15v-3h-3V14h3Z"/>
+    <!-- Inner strawberry-milk card body -->
+    <path fill="#fff5f8" d="M17 14h65v3h10v-3h188v2h2v68h-2v2H94v-3H84v3H17v-2h-2V16h2Z"/>
+    <!-- Top decorative gingham lace bar on right side -->
+    <rect x="96" y="14" width="184" height="7" fill="url(#stripe-semgrep)"/>
+    <rect x="96" y="21" width="184" height="1.5" fill="#eebace"/>
+  </g>
+
+  <!-- Perforated Ticket Stitch Line + Inner Card Stitching -->
+  <line x1="89" y1="18" x2="89" y2="82" stroke="#e29eb6" stroke-width="1.6" stroke-dasharray="3 3"/>
+  <rect x="96" y="18" width="182" height="64" rx="6" fill="none" stroke="#efb8cb" stroke-width="1.2" stroke-dasharray="4 3"/>
+
+  <!-- Left Charm Medallion (Gingham Cushion Frame) -->
+  <rect x="18" y="20" width="60" height="62" rx="10" fill="url(#gingham-semgrep)" stroke="#84b5de" stroke-width="2"/>
+  <rect x="21" y="23" width="54" height="56" rx="8" fill="none" stroke="#ffffff" stroke-width="1.4" stroke-dasharray="3 2"/>
+
+  <!-- Cute Cheek Blush inside Medallion Corners -->
+  <g stroke="#f29cb5" stroke-width="1.5" stroke-linecap="round" opacity="0.85">
+    <line x1="23" y1="74" x2="25" y2="71"/>
+    <line x1="26.5" y1="74" x2="28.5" y2="71"/>
+    <line x1="68.5" y1="74" x2="70.5" y2="71"/>
+    <line x1="72" y1="74" x2="74" y2="71"/>
+  </g>
+
+  <!-- Original Kawaii Tool Icon -->
+  <g class="bob">
+    
+          <!-- Cute cream code note card -->
+          <rect x="27" y="32" width="42" height="35" rx="6" fill="#fffdf9" stroke="#754351" stroke-width="2"/>
+          <path d="M27 40h42" stroke="#e4c2ce" stroke-width="1.5"/>
+          <circle cx="32.5" cy="36" r="1.5" fill="#f497b2"/>
+          <circle cx="37.5" cy="36" r="1.5" fill="#f5cc66"/>
+          <circle cx="42.5" cy="36" r="1.5" fill="#8ec0e6"/>
+          <!-- Curly braces { } -->
+          <path d="M35 44.5c-2 0-2.5 1-2.5 2.5v2c0 1.2-.8 2-2 2 1.2 0 2 .8 2 2v2c0 1.5.5 2.5 2.5 2.5" fill="none" stroke="#5385ac" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M61 44.5c2 0 2.5 1 2.5 2.5v2c0 1.2.8 2 2 2-1.2 0-2 .8-2 2v2c0 1.5-.5 2.5-2.5 2.5" fill="none" stroke="#5385ac" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- Code lines inside braces -->
+          <line x1="39" y1="46.5" x2="51" y2="46.5" stroke="#f497b2" stroke-width="2.6" stroke-linecap="round"/>
+          <line x1="41" y1="51.5" x2="56" y2="51.5" stroke="#85b8e0" stroke-width="2.6" stroke-linecap="round"/>
+          <line x1="39" y1="56.5" x2="48" y2="56.5" stroke="#f5cc66" stroke-width="2.6" stroke-linecap="round"/>
+          <!-- Cute star-tipped wand -->
+          <line x1="55" y1="56.5" x2="68" y2="69" stroke="#754351" stroke-width="3.4" stroke-linecap="round"/>
+          <line x1="55" y1="56.5" x2="68" y2="69" stroke="#f7b2c4" stroke-width="1.8" stroke-linecap="round"/>
+          <path d="M53 49.5 l2 3.4 l3.8 .6 l-2.7 2.6 l.7 3.7 l-3.3-1.8 l-3.3 1.8 l.7-3.7 l-2.7-2.6 l3.8-.6 Z" fill="#ffe58f" stroke="#754351" stroke-width="1.6" stroke-linejoin="round"/>
+        
+  </g>
+
+  <!-- Plump Kawaii Ribbon Bow Perched on Top of the Medallion -->
+  <g class="pixel" transform="translate(34 5)">
+    <!-- Ribbon tails -->
+    <path fill="#5687ad" d="M7 11h5v6H9v-2H7Zm9 0h5v4h-2v2h-3Z"/>
+    <path fill="#92c2e8" d="M8 11h3v4H8Zm9 0h3v4h-3Z"/>
+    <!-- Bow outer outline -->
+    <path fill="#754351" d="M2 1h8v2h2v1h4V3h2V1h8v2h2v8h-2v2h-8v-1h-2v1h-4v-1H10v1H2v-2H0V3h2Z"/>
+    <!-- Bow main fill -->
+    <path fill="#92c2e8" d="M3 2h7v2h1v6H3V9H2V3h1Zm15 0h7v1h1v6h-1v1h-7V4h1V2Z"/>
+    <!-- Bow top highlights -->
+    <path fill="#dcf0fd" d="M3 3h5v2H3Zm16 0h5v2h-5Z"/>
+    <!-- Bow inner pleats -->
+    <path fill="#5687ad" d="M8 5h3v2H8Zm9 0h3v2h-3Z"/>
+    <!-- Center strawberry-pink knot -->
+    <path fill="#754351" d="M11 3h6v7h-6Z"/>
+    <path fill="#f497b2" d="M12 4h4v5h-4Z"/>
+    <path fill="#fff8fb" d="M13 5h2v2h-2Z"/>
+  </g>
+
+  <!-- Right Zone: Mini Window Header Dots & Floating Twinkles -->
+  <g transform="translate(103 26)">
+    <!-- Three tiny stationery charm dots -->
+    <circle cx="4" cy="4" r="2.8" fill="#f59eb8"/>
+    <circle cx="12.5" cy="4" r="2.8" fill="#ffe08c"/>
+    <circle cx="21" cy="4" r="2.8" fill="#9bc7e8"/>
+    <path d="M29 4h96" stroke="#f0c4d4" stroke-width="1.5" stroke-dasharray="2 3" stroke-linecap="round"/>
+  </g>
+
+  <!-- Top-Right Twinkling Star & Mini Heart -->
+  <g transform="translate(258 24)"><g class="twinkle"><use href="#star-gold-semgrep"/></g></g>
+  <g transform="translate(244 26)"><g class="twinkle-late"><use href="#heart-mini-semgrep"/></g></g>
+
+  <!-- Tool Name with Tailored Pastel Highlighter Ribbon & Rosy Blush -->
+  <g transform="translate(103 34)">
+    <!-- Tailored highlighter bar behind name -->
+    <rect x="-1" y="13" width="94" height="8" rx="4" fill="#ffd9e6"/>
+    <text x="2" y="18" class="tool-name">Semgrep</text>
+    <!-- Cute rosy blush slashes right beside name -->
+    <g stroke="#f293b0" stroke-width="1.7" stroke-linecap="round">
+      <line x1="100" y1="16" x2="103" y2="11"/>
+      <line x1="104.5" y1="16" x2="107.5" y2="11"/>
+      <line x1="109" y1="16" x2="112" y2="11"/>
+    </g>
+  </g>
+
+  <!-- Category Pill Badge (Pastel Candy Tag) -->
+  <g transform="translate(103 59)">
+    <!-- Pill shadow -->
+    <rect x="1" y="2" width="112" height="20" rx="10" fill="#ecd0dc"/>
+    <!-- Pill body -->
+    <rect x="0" y="0" width="112" height="20" rx="10" fill="#ecf6fe" stroke="#8fbce2" stroke-width="1.6"/>
+    <!-- Tiny pixel heart bullet inside pill -->
+    <g transform="translate(7 6)">
+      <use href="#heart-mini-semgrep"/>
+    </g>
+    <!-- Category text -->
+    <text x="20" y="14.2" class="tool-cat">code analysis</text>
+  </g>
+
+  <!-- Bottom-Right Tiny Strawberry Garnish -->
+  <g transform="translate(265 65)">
+    <g class="bob"><use href="#berry-mini-semgrep"/></g>
+  </g>
+</svg>
