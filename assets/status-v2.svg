@@ -3,27 +3,45 @@
   <desc id="st-desc">Pastel pink and cream pixel status ribbon reading bugs and strawberry milk, decorated with a tiny pixel strawberry, strawberry milk carton, pixel hearts, and a decorative typing cursor.</desc>
   <style>
     .status-text { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 12.5px; font-weight: 700; fill: #6e4555; }
-    .cursor-deco {
-      opacity: 0.88;
-      animation: cursor-soft 2.8s ease-in-out infinite;
+    .cursor-deco, .heart-pulse, .heart-pulse-alt, .twinkle-a, .twinkle-b, .charm-wiggle, .charm-wiggle-alt {
+      transform-box: fill-box;
+      transform-origin: center;
     }
-    .twinkle-a { animation: twinkle 4s ease-in-out infinite; }
-    .twinkle-b { animation: twinkle 4.8s ease-in-out -2.2s infinite; }
-    .bob-soft { animation: bob 5.4s steps(2, end) infinite; }
+    .cursor-deco {
+      animation: cursor-soft 1.7s ease-in-out infinite;
+    }
+    .heart-pulse { animation: st-heart-pulse 2.0s ease-in-out infinite; }
+    .heart-pulse-alt { animation: st-heart-pulse 2.2s ease-in-out -1.1s infinite; }
+    .twinkle-a { animation: twinkle 2.1s ease-in-out -0.3s infinite; }
+    .twinkle-b { animation: twinkle 2.4s ease-in-out -1.4s infinite; }
+    .charm-wiggle { animation: st-charm 2.4s ease-in-out -0.2s infinite; }
+    .charm-wiggle-alt { animation: st-charm 2.6s ease-in-out -1.4s infinite; }
     @keyframes cursor-soft {
-      0%, 100% { opacity: 0.42; }
-      50% { opacity: 0.95; }
+      0%, 100% { opacity: 1; transform: scaleY(1); }
+      45% { opacity: 0.22; transform: scaleY(0.84); }
+      75% { opacity: 1; transform: scaleY(1.08); }
+    }
+    @keyframes st-heart-pulse {
+      0%, 100% { transform: translateY(0) scale(1) rotate(0deg); opacity: 1; }
+      24% { transform: translateY(-3.5px) scale(1.28) rotate(-6deg); opacity: 1; }
+      44% { transform: translateY(-1px) scale(1.06) rotate(0deg); opacity: 0.88; }
+      64% { transform: translateY(-3px) scale(1.24) rotate(6deg); opacity: 1; }
+      84% { transform: translateY(0.5px) scale(0.92) rotate(0deg); opacity: 0.78; }
     }
     @keyframes twinkle {
-      0%, 100% { opacity: 0.7; }
-      50% { opacity: 1; }
+      0%, 100% { opacity: 1; transform: translateY(0) scale(1) rotate(0deg); }
+      35% { opacity: 0.32; transform: translateY(1px) scale(0.65) rotate(-16deg); }
+      70% { opacity: 1; transform: translateY(-2px) scale(1.32) rotate(16deg); }
     }
-    @keyframes bob {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-1px); }
+    @keyframes st-charm {
+      0%, 100% { transform: translateY(0) rotate(0deg) scale(1, 1); }
+      20% { transform: translateY(1px) rotate(-2deg) scale(1.05, 0.94); }
+      45% { transform: translateY(-4px) rotate(-8deg) scale(1.07, 1.05); }
+      65% { transform: translateY(-0.5px) rotate(1deg) scale(1.02, 0.97); }
+      85% { transform: translateY(-3.5px) rotate(8deg) scale(1.07, 1.05); }
     }
     @media (prefers-reduced-motion: reduce) {
-      .cursor-deco, .twinkle-a, .twinkle-b, .bob-soft {
+      .cursor-deco, .heart-pulse, .heart-pulse-alt, .twinkle-a, .twinkle-b, .charm-wiggle, .charm-wiggle-alt {
         animation: none;
         opacity: 1;
         transform: none;
@@ -90,17 +108,17 @@
 
   <!-- Left cap decorative pixel cluster (heart + blue sparkle + stitches) -->
   <path fill="#f2adc4" d="M36 22h6v2h-6Zm38 0h6v2h-6Z"/>
-  <g transform="translate(48 18)"><g class="twinkle-a"><use href="#st-heart"/></g></g>
+  <g transform="translate(48 18)"><g class="heart-pulse"><use href="#st-heart"/></g></g>
   <g transform="translate(66 12)"><g class="twinkle-b"><use href="#st-sparkle"/></g></g>
 
   <!-- Right cap decorative pixel cluster -->
   <path fill="#f2adc4" d="M540 22h6v2h-6Zm38 0h6v2h-6Z"/>
-  <g transform="translate(560 18)"><g class="twinkle-b"><use href="#st-heart"/></g></g>
+  <g transform="translate(560 18)"><g class="heart-pulse-alt"><use href="#st-heart"/></g></g>
   <g transform="translate(546 12)"><g class="twinkle-a"><use href="#st-sparkle"/></g></g>
 
   <!-- Inner left icons: tiny pixel strawberry + pixel heart (x=146..182, outside safe zone x=194..398) -->
-  <g transform="translate(146 14)"><g class="bob-soft"><use href="#st-strawberry"/></g></g>
-  <g transform="translate(170 18)"><g class="twinkle-a"><use href="#st-heart"/></g></g>
+  <g transform="translate(146 14)"><g class="charm-wiggle"><use href="#st-strawberry"/></g></g>
+  <g transform="translate(170 18)"><g class="heart-pulse-alt"><use href="#st-heart"/></g></g>
 
   <!-- Center English status text -->
   <g class="status-text" text-anchor="middle">
@@ -115,7 +133,7 @@
   </g>
 
   <!-- Inner right icons: tiny pixel strawberry milk + pixel heart + blue sparkle (x=416..468, outside safe zone x=194..398) -->
-  <g transform="translate(416 11)"><g class="bob-soft"><use href="#st-milk"/></g></g>
-  <g transform="translate(442 18)"><g class="twinkle-b"><use href="#st-heart"/></g></g>
+  <g transform="translate(416 11)"><g class="charm-wiggle-alt"><use href="#st-milk"/></g></g>
+  <g transform="translate(442 18)"><g class="heart-pulse"><use href="#st-heart"/></g></g>
   <g transform="translate(460 14)"><g class="twinkle-a"><use href="#st-sparkle"/></g></g>
 </svg>

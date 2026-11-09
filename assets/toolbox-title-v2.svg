@@ -3,10 +3,18 @@
   <desc id="tb-desc">A pastel strawberry-milk sticker banner reading toolbox, garnished with tiny pink ribbon bows, hearts, strawberries, and twinkling stars.</desc>
   <style>
     .pixel { shape-rendering: crispEdges; }
-    .bob { animation: bob 5.6s steps(4, end) infinite; }
-    .bob-late { animation: bob 5.6s steps(4, end) -2.8s infinite; }
-    .twinkle { animation: twinkle 4.2s ease-in-out infinite; }
-    .twinkle-late { animation: twinkle 4.8s ease-in-out -2.1s infinite; }
+    .bow-bounce, .bow-bounce-late, .charm-wiggle, .charm-wiggle-late, .heart-pulse, .heart-pulse-late, .twinkle, .twinkle-late {
+      transform-box: fill-box;
+      transform-origin: center;
+    }
+    .bow-bounce { animation: tb-bow 2.3s ease-in-out infinite; }
+    .bow-bounce-late { animation: tb-bow 2.5s ease-in-out -1.2s infinite; }
+    .charm-wiggle { animation: tb-charm 2.5s ease-in-out -0.4s infinite; }
+    .charm-wiggle-late { animation: tb-charm 2.7s ease-in-out -1.6s infinite; }
+    .heart-pulse { animation: tb-heart 2.0s ease-in-out -0.2s infinite; }
+    .heart-pulse-late { animation: tb-heart 2.2s ease-in-out -1.3s infinite; }
+    .twinkle { animation: twinkle 2.1s ease-in-out infinite; }
+    .twinkle-late { animation: twinkle 2.4s ease-in-out -1.1s infinite; }
     .title-text {
       font-family: ui-rounded, -apple-system, BlinkMacSystemFont, Comfortaa, Nunito, Helvetica, Arial, sans-serif;
       font-size: 19px;
@@ -14,16 +22,38 @@
       letter-spacing: 3.5px;
       fill: #5d3442;
     }
-    @keyframes bob {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-2px); }
+    @keyframes tb-bow {
+      0%, 100% { transform: translateY(0) scale(1, 1) rotate(0deg); }
+      18% { transform: translateY(1.5px) scale(1.08, 0.92) rotate(-2deg); }
+      42% { transform: translateY(-5px) scale(0.94, 1.09) rotate(-8deg); }
+      62% { transform: translateY(1px) scale(1.05, 0.94) rotate(2deg); }
+      82% { transform: translateY(-4.2px) scale(0.95, 1.07) rotate(8deg); }
+    }
+    @keyframes tb-charm {
+      0%, 100% { transform: translateY(0) rotate(0deg) scale(1, 1); }
+      20% { transform: translateY(1px) rotate(-2deg) scale(1.05, 0.94); }
+      45% { transform: translateY(-4.5px) rotate(-9deg) scale(1.08, 1.06); }
+      65% { transform: translateY(-0.5px) rotate(1deg) scale(1.02, 0.97); }
+      85% { transform: translateY(-4px) rotate(9deg) scale(1.08, 1.05); }
+    }
+    @keyframes tb-heart {
+      0%, 100% { transform: translateY(0) scale(1) rotate(0deg); opacity: 1; }
+      24% { transform: translateY(-3.5px) scale(1.30) rotate(-6deg); opacity: 1; }
+      44% { transform: translateY(-1px) scale(1.06) rotate(0deg); opacity: 0.88; }
+      64% { transform: translateY(-3px) scale(1.24) rotate(6deg); opacity: 1; }
+      84% { transform: translateY(0.5px) scale(0.92) rotate(0deg); opacity: 0.78; }
     }
     @keyframes twinkle {
-      0%, 100% { opacity: 0.62; }
-      50% { opacity: 1; }
+      0%, 100% { opacity: 1; transform: translateY(0) scale(1) rotate(0deg); }
+      35% { opacity: 0.32; transform: translateY(1px) scale(0.65) rotate(-16deg); }
+      70% { opacity: 1; transform: translateY(-2.5px) scale(1.30) rotate(16deg); }
     }
     @media (prefers-reduced-motion: reduce) {
-      .bob, .bob-late, .twinkle, .twinkle-late { animation: none; }
+      .bow-bounce, .bow-bounce-late, .charm-wiggle, .charm-wiggle-late, .heart-pulse, .heart-pulse-late, .twinkle, .twinkle-late {
+        animation: none;
+        transform: none;
+        opacity: 1;
+      }
     }
   </style>
   <defs>
@@ -98,15 +128,15 @@
   </g>
 
   <!-- Flanking Garnishes (Bows, Hearts, Berries, Stars) -->
-  <g transform="translate(72 17)"><g class="bob"><use href="#px-bow"/></g></g>
+  <g transform="translate(72 17)"><g class="bow-bounce"><use href="#px-bow"/></g></g>
   <g transform="translate(148 19)"><g class="twinkle"><use href="#px-star-gold"/></g></g>
-  <g transform="translate(216 18)"><g class="bob-late"><use href="#px-berry"/></g></g>
+  <g transform="translate(216 18)"><g class="charm-wiggle-late"><use href="#px-berry"/></g></g>
   <g transform="translate(286 19)"><g class="twinkle-late"><use href="#px-star-blue"/></g></g>
 
   <g transform="translate(703 19)"><g class="twinkle"><use href="#px-star-blue"/></g></g>
-  <g transform="translate(772 18)"><g class="bob"><use href="#px-berry"/></g></g>
+  <g transform="translate(772 18)"><g class="charm-wiggle"><use href="#px-berry"/></g></g>
   <g transform="translate(841 19)"><g class="twinkle-late"><use href="#px-star-gold"/></g></g>
-  <g transform="translate(902 17)"><g class="bob-late"><use href="#px-bow"/></g></g>
+  <g transform="translate(902 17)"><g class="bow-bounce-late"><use href="#px-bow"/></g></g>
 
   <!-- Center Sticker Plaque Shadow & Die-cut Frame -->
   <g class="pixel">
@@ -126,10 +156,10 @@
   </g>
 
   <!-- Plaque Bow & Heart Garnishes -->
-  <g transform="translate(373 17)"><g class="bob"><use href="#px-bow"/></g></g>
-  <g transform="translate(405 21)"><g class="twinkle"><use href="#px-mini-heart"/></g></g>
-  <g transform="translate(585 21)"><g class="twinkle-late"><use href="#px-mini-heart"/></g></g>
-  <g transform="translate(601 17)"><g class="bob-late"><use href="#px-bow"/></g></g>
+  <g transform="translate(373 17)"><g class="bow-bounce-late"><use href="#px-bow"/></g></g>
+  <g transform="translate(405 21)"><g class="heart-pulse"><use href="#px-mini-heart"/></g></g>
+  <g transform="translate(585 21)"><g class="heart-pulse-late"><use href="#px-mini-heart"/></g></g>
+  <g transform="translate(601 17)"><g class="bow-bounce"><use href="#px-bow"/></g></g>
 
   <!-- Soft Pastel Highlighter Bar + Cute Cheek Blush Stripes Around Title -->
   <rect x="444" y="25" width="112" height="8" rx="4" fill="#ffd9e6"/>

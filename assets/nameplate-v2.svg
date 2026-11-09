@@ -2,32 +2,63 @@
   <title id="np-title">Caledvwlch</title>
   <desc id="np-desc">Cute strawberry milk pixel nameplate for Caledvwlch framed with pearl and eyelet lace edging, pink satin ribbons, strawberry milk, plump strawberries, a tiny heart cursor, and twinkling sky-blue and butter-cream stars.</desc>
   <style>
-    .bob { animation: np-bob 4.8s steps(2, end) infinite; }
-    .bob-alt { animation: np-bob 5.4s steps(2, end) -2.4s infinite; }
-    .cursor-move { animation: np-cursor 3.6s steps(2, end) infinite; }
-    .caret-blink { animation: np-blink 1.8s steps(2, end) infinite; }
-    .twinkle-a { animation: np-twinkle 3.6s ease-in-out infinite; }
-    .twinkle-b { animation: np-twinkle 4.4s ease-in-out -1.8s infinite; }
-    .twinkle-c { animation: np-twinkle 5.2s ease-in-out -3.1s infinite; }
-    @keyframes np-bob {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-2px); }
+    .bow-bounce, .bow-bounce-alt, .charm-wiggle, .charm-wiggle-alt, .heart-pulse, .heart-pulse-alt, .cursor-move, .caret-blink, .twinkle-a, .twinkle-b, .twinkle-c {
+      transform-box: fill-box;
+      transform-origin: center;
+    }
+    .bow-bounce { animation: np-bow-bounce 2.4s ease-in-out infinite; }
+    .bow-bounce-alt { animation: np-bow-bounce 2.6s ease-in-out -1.2s infinite; }
+    .charm-wiggle { animation: np-charm-wiggle 2.5s ease-in-out -0.4s infinite; }
+    .charm-wiggle-alt { animation: np-charm-wiggle 2.7s ease-in-out -1.6s infinite; }
+    .heart-pulse { animation: np-heart-pulse 2.0s ease-in-out -0.3s infinite; }
+    .heart-pulse-alt { animation: np-heart-pulse 2.2s ease-in-out -1.3s infinite; }
+    .cursor-move { animation: np-cursor 2.4s ease-in-out infinite; }
+    .caret-blink { animation: np-blink 1.6s ease-in-out infinite; }
+    .twinkle-a { animation: np-twinkle 2.1s ease-in-out infinite; }
+    .twinkle-b { animation: np-twinkle 2.4s ease-in-out -0.8s infinite; }
+    .twinkle-c { animation: np-twinkle 2.7s ease-in-out -1.6s infinite; }
+    @keyframes np-bow-bounce {
+      0%, 100% { transform: translateY(0) scale(1, 1) rotate(0deg); }
+      18% { transform: translateY(1.5px) scale(1.07, 0.92) rotate(-2deg); }
+      42% { transform: translateY(-6px) scale(0.94, 1.08) rotate(-7deg); }
+      62% { transform: translateY(1px) scale(1.05, 0.94) rotate(2deg); }
+      82% { transform: translateY(-4.5px) scale(0.96, 1.06) rotate(7deg); }
+    }
+    @keyframes np-charm-wiggle {
+      0%, 100% { transform: translateY(0) rotate(0deg) scale(1, 1); }
+      20% { transform: translateY(1px) rotate(-2deg) scale(1.04, 0.95); }
+      45% { transform: translateY(-5.5px) rotate(-8deg) scale(1.06, 1.05); }
+      65% { transform: translateY(-1px) rotate(1deg) scale(1.02, 0.97); }
+      85% { transform: translateY(-4.5px) rotate(8deg) scale(1.06, 1.04); }
+    }
+    @keyframes np-heart-pulse {
+      0%, 100% { transform: translateY(0) scale(1) rotate(0deg); opacity: 1; }
+      22% { transform: translateY(-4px) scale(1.28) rotate(-6deg); opacity: 1; }
+      40% { transform: translateY(-1.5px) scale(1.06) rotate(0deg); opacity: 0.88; }
+      60% { transform: translateY(-3.5px) scale(1.24) rotate(6deg); opacity: 1; }
+      82% { transform: translateY(0.5px) scale(0.92) rotate(0deg); opacity: 0.78; }
     }
     @keyframes np-cursor {
-      0%, 100% { transform: translate(0, 0); }
-      50% { transform: translate(-2px, -2px); }
+      0%, 100% { transform: translate(0, 0) rotate(0deg) scale(1); }
+      32% { transform: translate(-6px, -5px) rotate(-8deg) scale(1.06); }
+      52% { transform: translate(-6px, -4px) rotate(-10deg) scale(0.90); }
+      78% { transform: translate(-2px, -7px) rotate(5deg) scale(1.08); }
     }
     @keyframes np-blink {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.45; }
+      0%, 100% { opacity: 1; transform: scale(1); }
+      45% { opacity: 0.24; transform: scale(0.76); }
+      75% { opacity: 1; transform: scale(1.26); }
     }
     @keyframes np-twinkle {
-      0%, 100% { opacity: 0.65; }
-      50% { opacity: 1; }
+      0%, 100% { opacity: 1; transform: translateY(0) scale(1) rotate(0deg); }
+      35% { opacity: 0.32; transform: translateY(1.5px) scale(0.66) rotate(-16deg); }
+      70% { opacity: 1; transform: translateY(-2.5px) scale(1.28) rotate(16deg); }
     }
     @media (prefers-reduced-motion: reduce) {
-      .bob, .bob-alt, .cursor-move, .caret-blink, .twinkle-a, .twinkle-b, .twinkle-c {
+      .bow-bounce, .bow-bounce-alt, .charm-wiggle, .charm-wiggle-alt, .heart-pulse, .heart-pulse-alt, .cursor-move, .caret-blink, .twinkle-a, .twinkle-b, .twinkle-c {
         animation: none;
+        transform: none;
+        opacity: 1;
       }
     }
   </style>
@@ -118,26 +149,26 @@
   </g>
 
   <!-- Left & Right large satin bows on panel shoulders -->
-  <g transform="translate(68 28)"><g class="bob"><use href="#np-bow"/></g></g>
-  <g transform="translate(878 28)"><g class="bob-alt"><use href="#np-bow"/></g></g>
+  <g transform="translate(68 28)"><g class="bow-bounce"><use href="#np-bow"/></g></g>
+  <g transform="translate(878 28)"><g class="bow-bounce-alt"><use href="#np-bow"/></g></g>
 
   <!-- Left alcove charms: strawberry milk carton & plump strawberry -->
-  <g transform="translate(184 26)"><g class="bob-alt"><use href="#np-milk"/></g></g>
-  <g transform="translate(248 40)"><g class="bob"><use href="#np-berry"/></g></g>
+  <g transform="translate(184 26)"><g class="charm-wiggle-alt"><use href="#np-milk"/></g></g>
+  <g transform="translate(248 40)"><g class="charm-wiggle"><use href="#np-berry"/></g></g>
 
   <!-- Right alcove charms: plump strawberry & strawberry milk carton -->
-  <g transform="translate(716 40)"><g class="bob-alt"><use href="#np-berry"/></g></g>
-  <g transform="translate(772 26)"><g class="bob"><use href="#np-milk"/></g></g>
+  <g transform="translate(716 40)"><g class="charm-wiggle-alt"><use href="#np-berry"/></g></g>
+  <g transform="translate(772 26)"><g class="charm-wiggle"><use href="#np-milk"/></g></g>
 
   <!-- Tiny heart cursor + blinking heart caret right beside 'Caledvwlch' -->
   <g transform="translate(640 28)"><g class="caret-blink"><use href="#np-mini-heart"/></g></g>
   <g transform="translate(650 46)"><g class="cursor-move"><use href="#np-cursor"/></g></g>
 
   <!-- Floating pixel hearts -->
-  <g transform="translate(132 34)"><g class="bob"><use href="#np-heart"/></g></g>
-  <g transform="translate(844 34)"><g class="bob-alt"><use href="#np-heart"/></g></g>
-  <g transform="translate(284 26)"><g class="bob-alt"><use href="#np-mini-heart"/></g></g>
-  <g transform="translate(700 26)"><g class="bob"><use href="#np-mini-heart"/></g></g>
+  <g transform="translate(132 34)"><g class="heart-pulse"><use href="#np-heart"/></g></g>
+  <g transform="translate(844 34)"><g class="heart-pulse-alt"><use href="#np-heart"/></g></g>
+  <g transform="translate(284 26)"><g class="heart-pulse-alt"><use href="#np-mini-heart"/></g></g>
+  <g transform="translate(700 26)"><g class="heart-pulse"><use href="#np-mini-heart"/></g></g>
 
   <!-- Twinkling sky-blue (#a5d8ef) and butter-cream (#fff4cf) stars -->
   <g transform="translate(36 16)"><g class="twinkle-a"><use href="#np-star-sky-lg"/></g></g>

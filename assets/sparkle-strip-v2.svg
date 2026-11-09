@@ -2,21 +2,41 @@
   <title id="ss-title">Strawberry milk dotted lace closing strip</title>
   <desc id="ss-desc">An animated pink, cream, and sky-blue pixel dotted lace border with bows, hearts, and twinkling stars.</desc>
   <style>
-    .bob { animation: ss-bob 4.6s steps(2, end) infinite; }
-    .bob-alt { animation: ss-bob 5.2s steps(2, end) -2.3s infinite; }
-    .twinkle-a { animation: ss-twinkle 3.4s ease-in-out infinite; }
-    .twinkle-b { animation: ss-twinkle 4.2s ease-in-out -1.7s infinite; }
-    @keyframes ss-bob {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-2px); }
+    .bow-bounce, .bow-bounce-alt, .bow-center, .heart-pulse, .heart-pulse-alt, .twinkle-a, .twinkle-b {
+      transform-box: fill-box;
+      transform-origin: center;
+    }
+    .bow-bounce { animation: ss-bow 2.3s ease-in-out infinite; }
+    .bow-bounce-alt { animation: ss-bow 2.5s ease-in-out -1.1s infinite; }
+    .bow-center { animation: ss-bow 2.1s ease-in-out -0.55s infinite; }
+    .heart-pulse { animation: ss-heart 2.0s ease-in-out -0.3s infinite; }
+    .heart-pulse-alt { animation: ss-heart 2.2s ease-in-out -1.3s infinite; }
+    .twinkle-a { animation: ss-twinkle 2.1s ease-in-out infinite; }
+    .twinkle-b { animation: ss-twinkle 2.4s ease-in-out -1.0s infinite; }
+    @keyframes ss-bow {
+      0%, 100% { transform: translateY(0) scale(1, 1) rotate(0deg); }
+      20% { transform: translateY(1.5px) scale(1.08, 0.92) rotate(-2deg); }
+      45% { transform: translateY(-3.5px) scale(0.93, 1.10) rotate(-8deg); }
+      65% { transform: translateY(1px) scale(1.05, 0.94) rotate(2deg); }
+      85% { transform: translateY(-3px) scale(0.95, 1.08) rotate(8deg); }
+    }
+    @keyframes ss-heart {
+      0%, 100% { transform: translateY(0) scale(1) rotate(0deg); opacity: 1; }
+      25% { transform: translateY(-2.8px) scale(1.28) rotate(-6deg); opacity: 1; }
+      45% { transform: translateY(-1px) scale(1.06) rotate(0deg); opacity: 0.88; }
+      65% { transform: translateY(-2.4px) scale(1.24) rotate(6deg); opacity: 1; }
+      85% { transform: translateY(0.5px) scale(0.92) rotate(0deg); opacity: 0.78; }
     }
     @keyframes ss-twinkle {
-      0%, 100% { opacity: 0.6; }
-      50% { opacity: 1; }
+      0%, 100% { opacity: 1; transform: translateY(0) scale(1) rotate(0deg); }
+      35% { opacity: 0.32; transform: translateY(1px) scale(0.65) rotate(-16deg); }
+      70% { opacity: 1; transform: translateY(-2px) scale(1.28) rotate(16deg); }
     }
     @media (prefers-reduced-motion: reduce) {
-      .bob, .bob-alt, .twinkle-a, .twinkle-b {
+      .bow-bounce, .bow-bounce-alt, .bow-center, .heart-pulse, .heart-pulse-alt, .twinkle-a, .twinkle-b {
         animation: none;
+        transform: none;
+        opacity: 1;
       }
     }
   </style>
@@ -65,22 +85,22 @@
   </g>
 
   <!-- Bows, hearts, and twinkling blue/butter stars along the lace -->
-  <g transform="translate(56 4)"><g class="bob-alt"><use href="#ss-bow"/></g></g>
+  <g transform="translate(56 4)"><g class="bow-bounce-alt"><use href="#ss-bow"/></g></g>
   <g transform="translate(136 8)"><g class="twinkle-a"><use href="#ss-star-sky"/></g></g>
-  <g transform="translate(194 5)"><g class="bob"><use href="#ss-heart"/></g></g>
+  <g transform="translate(194 5)"><g class="heart-pulse"><use href="#ss-heart"/></g></g>
   <g transform="translate(262 8)"><g class="twinkle-b"><use href="#ss-star-but"/></g></g>
-  <g transform="translate(320 4)"><g class="bob-alt"><use href="#ss-bow"/></g></g>
+  <g transform="translate(320 4)"><g class="bow-bounce"><use href="#ss-bow"/></g></g>
   <g transform="translate(394 8)"><g class="twinkle-a"><use href="#ss-star-sky"/></g></g>
-  <g transform="translate(442 9)"><g class="bob"><use href="#ss-mini-heart"/></g></g>
+  <g transform="translate(442 9)"><g class="heart-pulse-alt"><use href="#ss-mini-heart"/></g></g>
 
   <!-- Centerpiece bow -->
-  <g transform="translate(485 4)"><g class="bob"><use href="#ss-bow"/></g></g>
+  <g transform="translate(485 4)"><g class="bow-center"><use href="#ss-bow"/></g></g>
 
-  <g transform="translate(544 9)"><g class="bob-alt"><use href="#ss-mini-heart"/></g></g>
+  <g transform="translate(544 9)"><g class="heart-pulse"><use href="#ss-mini-heart"/></g></g>
   <g transform="translate(592 8)"><g class="twinkle-b"><use href="#ss-star-but"/></g></g>
-  <g transform="translate(650 4)"><g class="bob"><use href="#ss-bow"/></g></g>
+  <g transform="translate(650 4)"><g class="bow-bounce-alt"><use href="#ss-bow"/></g></g>
   <g transform="translate(724 8)"><g class="twinkle-a"><use href="#ss-star-sky"/></g></g>
-  <g transform="translate(780 5)"><g class="bob-alt"><use href="#ss-heart"/></g></g>
+  <g transform="translate(780 5)"><g class="heart-pulse-alt"><use href="#ss-heart"/></g></g>
   <g transform="translate(850 8)"><g class="twinkle-b"><use href="#ss-star-but"/></g></g>
-  <g transform="translate(914 4)"><g class="bob"><use href="#ss-bow"/></g></g>
+  <g transform="translate(914 4)"><g class="bow-bounce"><use href="#ss-bow"/></g></g>
 </svg>

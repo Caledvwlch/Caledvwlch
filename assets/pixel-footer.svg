@@ -2,13 +2,67 @@
   <title id="f-title">A little strawberry milk picnic</title>
   <desc id="f-desc">An original cream pixel bunny with rosy cheeks and blue eyes sits at a pink picnic, surrounded by strawberry milk, cherries, hearts, clouds and gently twinkling stars.</desc>
   <style>
-    .bob { animation: bob 6s steps(6, end) infinite; }
-    .late { animation-delay: -3s; }
-    .twinkle { animation: twinkle 5s ease-in-out infinite; }
-    .slow { animation-duration: 7s; animation-delay: -2s; }
-    @keyframes bob { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-2px); } }
-    @keyframes twinkle { 0%,100% { opacity: .65; } 50% { opacity: 1; } }
-    @media (prefers-reduced-motion: reduce) { .bob,.twinkle { animation: none; } }
+    .bunny-hop {
+      transform-box: fill-box;
+      transform-origin: 50% 92%;
+      animation: f-bunny-hop 2.4s ease-in-out infinite;
+    }
+    .mat-shadow, .charm-wiggle, .charm-wiggle-late, .heart-pulse, .heart-pulse-late, .twinkle, .twinkle-slow, .cloud-drift, .cloud-drift-alt {
+      transform-box: fill-box;
+      transform-origin: center;
+    }
+    .mat-shadow { animation: f-mat-shadow 2.4s ease-in-out infinite; }
+    .charm-wiggle { animation: f-charm 2.5s ease-in-out -0.4s infinite; }
+    .charm-wiggle-late { animation: f-charm 2.7s ease-in-out -1.6s infinite; }
+    .heart-pulse { animation: f-heart-pulse 2.0s ease-in-out -0.2s infinite; }
+    .heart-pulse-late { animation: f-heart-pulse 2.2s ease-in-out -1.3s infinite; }
+    .twinkle { animation: f-twinkle 2.1s ease-in-out infinite; }
+    .twinkle-slow { animation: f-twinkle 2.5s ease-in-out -1.2s infinite; }
+    .cloud-drift { animation: f-cloud 5.6s ease-in-out infinite; }
+    .cloud-drift-alt { animation: f-cloud 6.4s ease-in-out -2.8s infinite; }
+    @keyframes f-bunny-hop {
+      0%, 100% { transform: translateY(0) scale(1, 1) rotate(0deg); }
+      14% { transform: translateY(1.2px) scale(1.08, 0.90) rotate(0deg); }
+      34% { transform: translateY(-3.6px) scale(0.94, 1.07) rotate(-4deg); }
+      52% { transform: translateY(0.9px) scale(1.07, 0.92) rotate(0deg); }
+      72% { transform: translateY(-3.2px) scale(0.95, 1.06) rotate(4deg); }
+      88% { transform: translateY(0.5px) scale(1.03, 0.96) rotate(0deg); }
+    }
+    @keyframes f-mat-shadow {
+      0%, 100% { transform: scaleX(1); opacity: 1; }
+      14%, 52% { transform: scaleX(1.05); opacity: 1; }
+      34%, 72% { transform: scaleX(0.86); opacity: 0.78; }
+    }
+    @keyframes f-charm {
+      0%, 100% { transform: translateY(0) rotate(0deg) scale(1, 1); }
+      20% { transform: translateY(0.8px) rotate(-2deg) scale(1.05, 0.94); }
+      45% { transform: translateY(-3.5px) rotate(-7deg) scale(1.06, 1.05); }
+      65% { transform: translateY(-0.5px) rotate(1deg) scale(1.02, 0.97); }
+      85% { transform: translateY(-3px) rotate(7deg) scale(1.06, 1.04); }
+    }
+    @keyframes f-heart-pulse {
+      0%, 100% { transform: translateY(0) scale(1) rotate(0deg); opacity: 1; }
+      24% { transform: translateY(-4px) scale(1.30) rotate(-6deg); opacity: 1; }
+      44% { transform: translateY(-1.5px) scale(1.06) rotate(0deg); opacity: 0.88; }
+      64% { transform: translateY(-3.5px) scale(1.25) rotate(6deg); opacity: 1; }
+      84% { transform: translateY(0.5px) scale(0.92) rotate(0deg); opacity: 0.78; }
+    }
+    @keyframes f-twinkle {
+      0%, 100% { opacity: 1; transform: translateY(0) scale(1) rotate(0deg); }
+      35% { opacity: 0.32; transform: translateY(1px) scale(0.65) rotate(-16deg); }
+      70% { opacity: 1; transform: translateY(-2.5px) scale(1.30) rotate(16deg); }
+    }
+    @keyframes f-cloud {
+      0%, 100% { transform: translate(0, 0); }
+      50% { transform: translate(4px, -2px); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .bunny-hop, .mat-shadow, .charm-wiggle, .charm-wiggle-late, .heart-pulse, .heart-pulse-late, .twinkle, .twinkle-slow, .cloud-drift, .cloud-drift-alt {
+        animation: none;
+        transform: none;
+        opacity: 1;
+      }
+    }
   </style>
   <defs>
     <g id="f-heart"><path fill="#db8ca6" d="M2 0h3v1h2V0h3v1h2v5h-2v2H8v2H6v2H4v-2H2V8H0V2h2Z"/><path fill="#f5b2c7" d="M2 2h3v1h2V2h3v3H8v2H6v2H4V7H2Z"/><path fill="#fff5e9" d="M2 2h2v2H2Z"/></g>
@@ -84,34 +138,34 @@
   <path fill="#fff0eb" d="M952 90h8v6h-8Zm8 6h8v6h-8Z"/>
   <path fill="#fff0eb" d="M968 90h8v6h-8Zm8 6h8v6h-8Z"/>
   <path fill="#fff0eb" d="M984 90h8v6h-8Zm8 6h8v6h-8Z"/>
-  <g transform="translate(28 39) scale(1)"><g><use href="#f-cloud"/></g></g>
-  <g transform="translate(152 19) scale(0.8)"><g><use href="#f-cloud"/></g></g>
-  <g transform="translate(328 35) scale(0.7)"><g><use href="#f-cloud"/></g></g>
-  <g transform="translate(644 28) scale(0.8)"><g><use href="#f-cloud"/></g></g>
-  <g transform="translate(808 16) scale(0.8)"><g><use href="#f-cloud"/></g></g>
-  <g transform="translate(934 42) scale(1)"><g><use href="#f-cloud"/></g></g>
-  <g transform="translate(87 35) scale(1)"><g class="bob"><use href="#f-heart"/></g></g>
+  <g transform="translate(28 39) scale(1)"><g class="cloud-drift"><use href="#f-cloud"/></g></g>
+  <g transform="translate(152 19) scale(0.8)"><g class="cloud-drift-alt"><use href="#f-cloud"/></g></g>
+  <g transform="translate(328 35) scale(0.7)"><g class="cloud-drift"><use href="#f-cloud"/></g></g>
+  <g transform="translate(644 28) scale(0.8)"><g class="cloud-drift-alt"><use href="#f-cloud"/></g></g>
+  <g transform="translate(808 16) scale(0.8)"><g class="cloud-drift"><use href="#f-cloud"/></g></g>
+  <g transform="translate(934 42) scale(1)"><g class="cloud-drift-alt"><use href="#f-cloud"/></g></g>
+  <g transform="translate(87 35) scale(1)"><g class="heart-pulse"><use href="#f-heart"/></g></g>
   <g transform="translate(240 25) scale(1)"><g class="twinkle"><use href="#f-star"/></g></g>
-  <g transform="translate(365 16) scale(1)"><g class="twinkle slow"><use href="#f-heart"/></g></g>
+  <g transform="translate(365 16) scale(1)"><g class="heart-pulse-late"><use href="#f-heart"/></g></g>
   <g transform="translate(437 23) scale(1)"><g class="twinkle"><use href="#f-star"/></g></g>
-  <g transform="translate(547 18) scale(1)"><g class="bob late"><use href="#f-heart"/></g></g>
-  <g transform="translate(615 48) scale(1)"><g class="twinkle slow"><use href="#f-star"/></g></g>
-  <g transform="translate(708 28) scale(1)"><g class="bob"><use href="#f-heart"/></g></g>
+  <g transform="translate(547 18) scale(1)"><g class="heart-pulse"><use href="#f-heart"/></g></g>
+  <g transform="translate(615 48) scale(1)"><g class="twinkle-slow"><use href="#f-star"/></g></g>
+  <g transform="translate(708 28) scale(1)"><g class="heart-pulse-late"><use href="#f-heart"/></g></g>
   <g transform="translate(880 33) scale(1)"><g class="twinkle"><use href="#f-star"/></g></g>
-  <g class="twinkle slow"><path fill="#b7d3e6" d="M128 65h2v2h2v2h-2v2h-2v-2h-2v-2h2Z"/></g>
-  <g class="twinkle slow"><path fill="#b7d3e6" d="M287 44h2v2h2v2h-2v2h-2v-2h-2v-2h2Z"/></g>
-  <g class="twinkle slow"><path fill="#b7d3e6" d="M398 53h2v2h2v2h-2v2h-2v-2h-2v-2h2Z"/></g>
-  <g class="twinkle slow"><path fill="#b7d3e6" d="M594 19h2v2h2v2h-2v2h-2v-2h-2v-2h2Z"/></g>
-  <g class="twinkle slow"><path fill="#b7d3e6" d="M764 61h2v2h2v2h-2v2h-2v-2h-2v-2h2Z"/></g>
-  <g class="twinkle slow"><path fill="#b7d3e6" d="M914 18h2v2h2v2h-2v2h-2v-2h-2v-2h2Z"/></g>
-  <path fill="#edbacb" d="M452 85h96v3h-96Z"/>
-  <g transform="translate(476 8) scale(2)"><g class="bob"><use href="#f-bunny"/></g></g>
-  <g transform="translate(419 45) scale(1.5)"><g class="bob late"><use href="#f-milk"/></g></g>
-  <g transform="translate(547 62) scale(1.5)"><g class="bob late"><use href="#f-cherries"/></g></g>
-  <g transform="translate(184 64) scale(1.25)"><g class="bob"><use href="#f-cherries"/></g></g>
-  <g transform="translate(785 47) scale(1.5)"><g class="bob late"><use href="#f-milk"/></g></g>
-  <g transform="translate(308 68) scale(1)"><g class="bob late"><use href="#f-heart"/></g></g>
-  <g transform="translate(672 68) scale(1)"><g class="bob"><use href="#f-heart"/></g></g>
+  <g class="twinkle-slow"><path fill="#b7d3e6" d="M128 65h2v2h2v2h-2v2h-2v-2h-2v-2h2Z"/></g>
+  <g class="twinkle"><path fill="#b7d3e6" d="M287 44h2v2h2v2h-2v2h-2v-2h-2v-2h2Z"/></g>
+  <g class="twinkle-slow"><path fill="#b7d3e6" d="M398 53h2v2h2v2h-2v2h-2v-2h-2v-2h2Z"/></g>
+  <g class="twinkle"><path fill="#b7d3e6" d="M594 19h2v2h2v2h-2v2h-2v-2h-2v-2h2Z"/></g>
+  <g class="twinkle-slow"><path fill="#b7d3e6" d="M764 61h2v2h2v2h-2v2h-2v-2h-2v-2h2Z"/></g>
+  <g class="twinkle"><path fill="#b7d3e6" d="M914 18h2v2h2v2h-2v2h-2v-2h-2v-2h2Z"/></g>
+  <path class="mat-shadow" fill="#edbacb" d="M452 85h96v3h-96Z"/>
+  <g transform="translate(476 8) scale(2)"><g class="bunny-hop"><use href="#f-bunny"/></g></g>
+  <g transform="translate(419 45) scale(1.5)"><g class="charm-wiggle-late"><use href="#f-milk"/></g></g>
+  <g transform="translate(547 62) scale(1.5)"><g class="charm-wiggle"><use href="#f-cherries"/></g></g>
+  <g transform="translate(184 64) scale(1.25)"><g class="charm-wiggle"><use href="#f-cherries"/></g></g>
+  <g transform="translate(785 47) scale(1.5)"><g class="charm-wiggle-late"><use href="#f-milk"/></g></g>
+  <g transform="translate(308 68) scale(1)"><g class="heart-pulse-late"><use href="#f-heart"/></g></g>
+  <g transform="translate(672 68) scale(1)"><g class="heart-pulse"><use href="#f-heart"/></g></g>
   <path fill="#b6c7b0" d="M58 82h2v6h-2Zm-4-2h4v3h-4Zm6-2h4v3h-4Z"/>
   <path fill="#b6c7b0" d="M118 82h2v6h-2Zm-4-2h4v3h-4Zm6-2h4v3h-4Z"/>
   <path fill="#b6c7b0" d="M246 82h2v6h-2Zm-4-2h4v3h-4Zm6-2h4v3h-4Z"/>

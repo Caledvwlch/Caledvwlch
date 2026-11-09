@@ -3,9 +3,16 @@
   <desc id="ghidra-desc">Strawberry-milk kawaii sticker card for Ghidra (reverse engineering) with a pink ribbon bow, winged magnifying glass, and binary heart chip.</desc>
   <style>
     .pixel { shape-rendering: crispEdges; }
-    .bob { animation: bob 5.4s steps(4, end) infinite; }
-    .twinkle { animation: twinkle 4s ease-in-out infinite; }
-    .twinkle-late { animation: twinkle 4.6s ease-in-out -2.2s infinite; }
+    .bow-bounce, .charm-wiggle, .berry-wiggle, .star-twinkle, .heart-pulse, .heart-pulse-sm {
+      transform-box: fill-box;
+      transform-origin: center;
+    }
+    .bow-bounce { animation: bow-bounce 2.3s ease-in-out -0.1s infinite; }
+    .charm-wiggle { animation: charm-wiggle 2.5s ease-in-out -0.3s infinite; }
+    .berry-wiggle { animation: berry-wiggle 2.6s ease-in-out -1.4s infinite; }
+    .star-twinkle { animation: star-twinkle 2.1s ease-in-out -0.2s infinite; }
+    .heart-pulse { animation: heart-pulse 2.0s ease-in-out -0.9s infinite; }
+    .heart-pulse-sm { animation: heart-pulse-sm 2.2s ease-in-out -0.4s infinite; }
     .tool-name {
       font-family: ui-rounded, -apple-system, BlinkMacSystemFont, Comfortaa, Nunito, Helvetica, Arial, sans-serif;
       font-size: 20px;
@@ -20,16 +27,52 @@
       fill: #693b4b;
       letter-spacing: 0.15px;
     }
-    @keyframes bob {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-2px); }
+    @keyframes bow-bounce {
+      0%, 100% { transform: translateY(0) scale(1, 1) rotate(0deg); }
+      18% { transform: translateY(1.2px) scale(1.07, 0.92) rotate(-2deg); }
+      42% { transform: translateY(-4.5px) scale(0.94, 1.08) rotate(-7.5deg); }
+      62% { transform: translateY(0.8px) scale(1.05, 0.94) rotate(2deg); }
+      82% { transform: translateY(-4px) scale(0.95, 1.07) rotate(7.5deg); }
     }
-    @keyframes twinkle {
-      0%, 100% { opacity: 0.6; }
-      50% { opacity: 1; }
+    @keyframes charm-wiggle {
+      0%, 100% { transform: translateY(0) rotate(0deg) scale(1, 1); }
+      20% { transform: translateY(1px) rotate(-1.5deg) scale(1.04, 0.96); }
+      45% { transform: translateY(-4.5px) rotate(-5.5deg) scale(1.05, 1.04); }
+      65% { transform: translateY(-0.5px) rotate(1deg) scale(1.02, 0.98); }
+      85% { transform: translateY(-4px) rotate(5.5deg) scale(1.05, 1.04); }
+    }
+    @keyframes berry-wiggle {
+      0%, 100% { transform: translateY(0) rotate(0deg) scale(1, 1); }
+      22% { transform: translateY(1px) rotate(2deg) scale(1.06, 0.94); }
+      48% { transform: translateY(-4.5px) rotate(9deg) scale(1.10, 1.08); }
+      68% { transform: translateY(-0.5px) rotate(-1deg) scale(1.03, 0.97); }
+      88% { transform: translateY(-4px) rotate(-9deg) scale(1.08, 1.06); }
+    }
+    @keyframes star-twinkle {
+      0%, 100% { opacity: 1; transform: translateY(0) scale(1) rotate(0deg); }
+      35% { opacity: 0.32; transform: translateY(1px) scale(0.65) rotate(-16deg); }
+      70% { opacity: 1; transform: translateY(-2px) scale(1.30) rotate(16deg); }
+    }
+    @keyframes heart-pulse {
+      0%, 100% { transform: translateY(0) scale(1) rotate(0deg); opacity: 1; }
+      24% { transform: translateY(-3.5px) scale(1.30) rotate(-6deg); opacity: 1; }
+      44% { transform: translateY(-1px) scale(1.06) rotate(0deg); opacity: 0.88; }
+      64% { transform: translateY(-3px) scale(1.24) rotate(6deg); opacity: 1; }
+      84% { transform: translateY(0.5px) scale(0.92) rotate(0deg); opacity: 0.78; }
+    }
+    @keyframes heart-pulse-sm {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      26% { transform: scale(1.26); opacity: 1; }
+      48% { transform: scale(1.05); opacity: 0.9; }
+      68% { transform: scale(1.22); opacity: 1; }
+      86% { transform: scale(0.92); opacity: 0.82; }
     }
     @media (prefers-reduced-motion: reduce) {
-      .bob, .twinkle, .twinkle-late { animation: none; }
+      .bow-bounce, .charm-wiggle, .berry-wiggle, .star-twinkle, .heart-pulse, .heart-pulse-sm {
+        animation: none;
+        transform: none;
+        opacity: 1;
+      }
     }
   </style>
   <defs>
@@ -98,7 +141,7 @@
   </g>
 
   <!-- Original Kawaii Tool Icon -->
-  <g class="bob">
+  <g class="charm-wiggle">
     
           <!-- Cute puzzle binary chip -->
           <rect x="29" y="33" width="28" height="27" rx="5" fill="#fffdf9" stroke="#754351" stroke-width="2"/>
@@ -124,6 +167,7 @@
 
   <!-- Plump Kawaii Ribbon Bow Perched on Top of the Medallion -->
   <g class="pixel" transform="translate(34 5)">
+    <g class="bow-bounce">
     <!-- Ribbon tails -->
     <path fill="#bd5b78" d="M7 11h5v6H9v-2H7Zm9 0h5v4h-2v2h-3Z"/>
     <path fill="#f497b2" d="M8 11h3v4H8Zm9 0h3v4h-3Z"/>
@@ -139,6 +183,7 @@
     <path fill="#754351" d="M11 3h6v7h-6Z"/>
     <path fill="#e07594" d="M12 4h4v5h-4Z"/>
     <path fill="#fff8fb" d="M13 5h2v2h-2Z"/>
+    </g>
   </g>
 
   <!-- Right Zone: Mini Window Header Dots & Floating Twinkles -->
@@ -151,8 +196,8 @@
   </g>
 
   <!-- Top-Right Twinkling Star & Mini Heart -->
-  <g transform="translate(258 24)"><g class="twinkle"><use href="#star-gold-ghidra"/></g></g>
-  <g transform="translate(244 26)"><g class="twinkle-late"><use href="#heart-mini-ghidra"/></g></g>
+  <g transform="translate(258 24)"><g class="star-twinkle"><use href="#star-gold-ghidra"/></g></g>
+  <g transform="translate(244 26)"><g class="heart-pulse"><use href="#heart-mini-ghidra"/></g></g>
 
   <!-- Tool Name with Tailored Pastel Highlighter Ribbon & Rosy Blush -->
   <g transform="translate(103 34)">
@@ -175,7 +220,7 @@
     <rect x="0" y="0" width="144" height="20" rx="10" fill="#ffebf2" stroke="#e696b0" stroke-width="1.6"/>
     <!-- Tiny pixel heart bullet inside pill -->
     <g transform="translate(7 6)">
-      <use href="#heart-mini-ghidra"/>
+      <g class="heart-pulse-sm"><use href="#heart-mini-ghidra"/></g>
     </g>
     <!-- Category text -->
     <text x="20" y="14.2" class="tool-cat">reverse engineering</text>
@@ -183,6 +228,6 @@
 
   <!-- Bottom-Right Tiny Strawberry Garnish -->
   <g transform="translate(265 65)">
-    <g class="bob"><use href="#berry-mini-ghidra"/></g>
+    <g class="berry-wiggle"><use href="#berry-mini-ghidra"/></g>
   </g>
 </svg>

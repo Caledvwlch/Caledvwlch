@@ -3,19 +3,42 @@
   <desc id="ns-desc">Pink pixel browser-tab ribbon button with a handmade pixel star jar icon for star collection.</desc>
   <style>
     .label { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 11.5px; font-weight: 700; fill: #6e4555; }
-    .twinkle-a { animation: twinkle 3.8s ease-in-out infinite; }
-    .twinkle-b { animation: twinkle 4.6s ease-in-out -2.1s infinite; }
-    .float-slow { animation: bob 5.2s steps(2, end) -1.3s infinite; }
-    @keyframes twinkle {
-      0%, 100% { opacity: 0.72; }
-      50% { opacity: 1; }
+    .bow-bounce, .charm-wiggle, .heart-pulse, .heart-pulse-alt, .twinkle-b {
+      transform-box: fill-box;
+      transform-origin: center;
     }
-    @keyframes bob {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-1px); }
+    .bow-bounce { animation: ns-bow 2.4s ease-in-out -1.3s infinite; }
+    .charm-wiggle { animation: ns-charm 2.7s ease-in-out -1.5s infinite; }
+    .heart-pulse { animation: ns-heart 2.1s ease-in-out -0.9s infinite; }
+    .heart-pulse-alt { animation: ns-heart 2.3s ease-in-out -0.3s infinite; }
+    .twinkle-b { animation: ns-twinkle 2.3s ease-in-out -1.4s infinite; }
+    @keyframes ns-bow {
+      0%, 100% { transform: translateY(0) scale(1, 1) rotate(0deg); }
+      20% { transform: translateY(1.2px) scale(1.08, 0.92) rotate(2deg); }
+      45% { transform: translateY(-3.5px) scale(0.94, 1.09) rotate(8deg); }
+      65% { transform: translateY(0.8px) scale(1.05, 0.94) rotate(-2deg); }
+      85% { transform: translateY(-3px) scale(0.95, 1.07) rotate(-8deg); }
+    }
+    @keyframes ns-charm {
+      0%, 100% { transform: translateY(0) rotate(0deg) scale(1); }
+      25% { transform: translateY(-2.5px) rotate(5deg) scale(1.04); }
+      50% { transform: translateY(0.8px) rotate(0deg) scale(1.02, 0.97); }
+      75% { transform: translateY(-2.5px) rotate(-5deg) scale(1.04); }
+    }
+    @keyframes ns-heart {
+      0%, 100% { transform: translateY(0) scale(1) rotate(0deg); opacity: 1; }
+      24% { transform: translateY(-3.5px) scale(1.28) rotate(6deg); opacity: 1; }
+      44% { transform: translateY(-1px) scale(1.06) rotate(0deg); opacity: 0.88; }
+      64% { transform: translateY(-3px) scale(1.24) rotate(-6deg); opacity: 1; }
+      84% { transform: translateY(0.5px) scale(0.92) rotate(0deg); opacity: 0.78; }
+    }
+    @keyframes ns-twinkle {
+      0%, 100% { opacity: 1; transform: translateY(0) scale(1) rotate(0deg); }
+      35% { opacity: 0.32; transform: translateY(1px) scale(0.65) rotate(16deg); }
+      70% { opacity: 1; transform: translateY(-2px) scale(1.30) rotate(-16deg); }
     }
     @media (prefers-reduced-motion: reduce) {
-      .twinkle-a, .twinkle-b, .float-slow { animation: none; opacity: 1; transform: none; }
+      .bow-bounce, .charm-wiggle, .heart-pulse, .heart-pulse-alt, .twinkle-b { animation: none; opacity: 1; transform: none; }
     }
   </style>
   <defs>
@@ -91,6 +114,7 @@
   <path fill="#f2adc4" d="M30 53h6v2h-6Zm184 0h6v2h-6Zm10 0h6v2h-6Z"/>
 
   <!-- Handmade Pixel Icon: Star Jar (x=28..64, y=25..55) -->
+  <g class="charm-wiggle">
   <!-- Jar lid & blush ribbon neck -->
   <path fill="#6e4555" d="M32 25h22v4H32Z"/>
   <path fill="#f2adc4" d="M34 26h18v2H34Z"/>
@@ -117,6 +141,7 @@
   <path fill="#7fa6c4" d="M49 43h2v2h2v2h-2v2h-2v-2h-2v-2h2Z"/>
   <path fill="#aed0ea" d="M49 45h2v2h-2Z"/>
   <path fill="#f2adc4" d="M41 46h2v1h1v-1h2v2h-1v1h-3v-1h-1Z"/>
+  </g>
 
   <!-- Readable English label -->
   <g class="label" text-anchor="middle">
@@ -132,8 +157,8 @@
   <path fill="#6e4555" d="M224 36h2v2h2v2h2v2h-2v2h-2v2h-2v-2h2v-2h2v-2h-2v-2h-2Z"/>
 
   <!-- Decorative top-right bow & twinkling hearts/sparkles -->
-  <g transform="translate(216 4)"><use href="#ns-bow"/></g>
+  <g transform="translate(216 4)"><g class="bow-bounce"><use href="#ns-bow"/></g></g>
   <g transform="translate(66 26)"><g class="twinkle-b"><use href="#ns-sparkle-blue"/></g></g>
-  <g transform="translate(208 25)"><g class="twinkle-a"><use href="#ns-heart-sm"/></g></g>
-  <g transform="translate(10 6)"><g class="float-slow"><g class="twinkle-b"><use href="#ns-heart"/></g></g></g>
+  <g transform="translate(208 25)"><g class="heart-pulse-alt"><use href="#ns-heart-sm"/></g></g>
+  <g transform="translate(10 6)"><g class="heart-pulse"><use href="#ns-heart"/></g></g>
 </svg>
